@@ -1,3 +1,4 @@
+
 name: TSV Kalender Update
 
 on:
@@ -27,6 +28,7 @@ jobs:
 
       - name: Kalender generieren
         run: |
+          export PYTHONPATH="$PYTHONPATH:$GITHUB_WORKSPACE"
           python scripts/generate_calendars.py
 
       - name: Pull Request erstellen
