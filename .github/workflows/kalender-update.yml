@@ -18,8 +18,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Arbeitsverzeichnis setzen
-        run: cd $GITHUB_WORKSPACE
+      - name: Phyton Pfad setzen
+        run: echo "PYTHONPATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV
+
+     # - name: Arbeitsverzeichnis setzen
+     #   run: cd $GITHUB_WORKSPACE
 
       - name: Abhängigkeiten installieren
         run: pip install requests ics beautifulsoup4 lxml
