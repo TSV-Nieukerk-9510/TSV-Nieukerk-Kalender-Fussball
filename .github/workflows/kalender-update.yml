@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Repository auschecken
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PAT_PUSH }}
 
       - name: Python einrichten
         uses: actions/setup-python@v4
@@ -33,7 +35,7 @@ jobs:
       - name: Änderungen committen
         run: |
           git config user.name "TSV Kalender Bot"
-          git config user.email "kalender@tsv-nieukerk.de"
+          git config user.email "fussballjugendobmann@tsv-nieukerk.de"
           git add kalender/*.ics
           git commit -m "Automatische Kalender-Aktualisierung" || echo "Keine Änderungen"
 
