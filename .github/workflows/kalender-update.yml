@@ -47,5 +47,7 @@ jobs:
           title: "Automatische Kalender-Aktualisierung"
           body: "Neue Kalenderdateien wurden generiert."
           branch: kalender-update
+          merge-method: squash
+          auto-merge: true
 
 
