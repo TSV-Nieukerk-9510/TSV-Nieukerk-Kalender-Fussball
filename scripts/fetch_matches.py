@@ -15,7 +15,12 @@ def fetch_team_matches(team_url):
     """
 
     resp = requests.get(team_url)
+    # resp.raise_for_status()
+    print("Status Code:", resp.status_code)
+    if resp.status_code != 200:
+        print(resp.text[:1000])
     resp.raise_for_status()
+    ``
     soup = BeautifulSoup(resp.text, "lxml")
 
     matches = []
