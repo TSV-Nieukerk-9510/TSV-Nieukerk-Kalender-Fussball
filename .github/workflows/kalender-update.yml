@@ -20,7 +20,7 @@ jobs:
 
       - name: Abhängigkeiten installieren
         run: |
-          pip install ices beautifulsoup4 lxml requests
+          pip install ics beautifulsoup4 lxml requests
 
       - name: Kalender generieren
         run: |
