@@ -26,6 +26,11 @@ jobs:
           export PYTHONPATH="$PYTHONPATH:$GITHUB_WORKSPACE"
           python -u scripts/discover_teams.py    
           
+      - name: README erzeugen
+        run: |
+          export PYTHONPATH="$PYTHONPATH:$GITHUB_WORKSPACE"
+          python -u scripts/generate_readme.py    
+          
       - name: Kalender generieren
         run: |
           export PYTHONPATH="$PYTHONPATH:$GITHUB_WORKSPACE"
