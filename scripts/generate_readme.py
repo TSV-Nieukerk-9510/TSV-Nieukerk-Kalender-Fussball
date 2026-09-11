@@ -26,6 +26,16 @@ def build_calendar_url(filename):
     )
 
 
+def build_qr_url(filename):
+
+    return (
+        f"https://raw.githubusercontent.com/"
+        f"{GITHUB_ORG}/"
+        f"{REPOSITORY}/main/"
+        f"qr/{filename.replace('.ics', '.png')}"
+    )
+
+
 def generate_readme():
 
     teams = load_teams()
@@ -33,18 +43,20 @@ def generate_readme():
     content = []
 
     content.append(
-        "# TSV Nieukerk Fußballkalender\n"
+        "# TSV Nieukerk Fußballkalender"
     )
 
+    content.append("")
     content.append(
-        "Automatisch erzeugte Kalender für alle Mannschaften.\n"
+        "Automatisch erzeugte Kalender für alle Mannschaften des TSV Nieukerk."
     )
-
+    content.append("")
     content.append(
-        "Die Kalender können direkt in Outlook, Apple Kalender oder Google Kalender abonniert werden.\n"
+        "Die Kalender können in Outlook, Apple Kalender, Google Kalender oder anderen Kalender-Apps abonniert werden."
     )
-
-    content.append("---\n")
+    content.append("")
+    content.append("---")
+    content.append("")
 
     for team in sorted(
         teams,
@@ -55,26 +67,60 @@ def generate_readme():
             team["calendar"]
         )
 
-        content.append(
-            f"## {team['name']}\n"
+        qr_url = build_qr_url(
+            team["calendar"]
         )
 
         content.append(
-            f"**Kalenderdatei:** "
-            f"`{team['calendar']}`\n"
+            f"## {team['name']}"
         )
+
+        content.append("")
 
         content.append(
-            f"📅 Kalender abonnieren:\n\n"
-            f"{calendar_url}\n"
+            f"**Kalenderdatei:** `{team['calendar']}`"
         )
+
+        content.append("")
 
         content.append(
-            f"⚽ Mannschaftsseite:\n\n"
-            f"{team['url']}\n"
+            f"📅 **Kalender abonnieren:**"
         )
 
-        content.append("\n---\n")
+        content.append("")
+
+        content.append(
+            calendar_url
+        )
+
+        content.append("")
+
+        content.append(
+            f"⚽ **Mannschaftsseite:**"
+        )
+
+        content.append("")
+
+        content.append(
+            team["url"]
+        )
+
+        content.append("")
+
+        content.append(
+            f"📱 **QR-Code:**"
+        )
+
+        content.append("")
+
+        content.append(
+            f"{qr_url}"
+        )
+
+        content.append("")
+
+        content.append("---")
+        content.append("")
 
     with open(
         "README.md",
