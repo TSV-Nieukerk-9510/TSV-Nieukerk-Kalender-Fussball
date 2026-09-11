@@ -1,42 +1,84 @@
+# scripts/fetch_matches.py
+
 import re
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 
 
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/128.0 Safari/537.36"
+    )
+}
+
+
+def extract_team_id(team_url):
+    match = re.search(r"team-id/([^/#?]+)", team_url)
+
+    if not match:
+        raise ValueError(
+            f"Keine Team-ID in URL gefunden: {team_url}"
+        )
+
+    return match.group(1)
+
+
 def fetch_team_matches(team_url):
 
+    team_id = extract_team_id(team_url)
+
+    matchplan_url = (
+        f"https://www.fussball.de/ajax.team.matchplan/"
+        f"-/mode/PAGE/team-id/{team_id}"
+    )
+
+    print(f"Lade Matchplan: {matchplan_url}")
+
     response = requests.get(
-        team_url,
-        headers={
-            "User-Agent": "Mozilla/5.0"
-        },
+        matchplan_url,
+        headers=HEADERS,
         timeout=30
     )
 
     response.raise_for_status()
 
-    soup = BeautifulSoup(response.text, "html.parser")
+    soup = BeautifulSoup(
+        response.text,
+        "html.parser"
+    )
 
     matches = []
 
-    competition_rows = soup.select("tr.row-competition")
+    competition_rows = soup.select(
+        "tr.row-competition"
+    )
 
-    print(f"{len(competition_rows)} Spieltermine gefunden")
+    print(
+        f"Gefundene Spieltermine: "
+        f"{len(competition_rows)}"
+    )
 
-    for comp_row in competition_rows:
+    for competition_row in competition_rows:
 
-        game_row = comp_row.find_next_sibling("tr")
+        game_row = competition_row.find_next_sibling("tr")
 
         if not game_row:
             continue
 
-        date_cell = comp_row.select_one(".column-date")
+        date_cell = competition_row.select_one(
+            ".column-date"
+        )
 
         if not date_cell:
             continue
 
-        date_text = date_cell.get_text(" ", strip=True)
+        date_text = date_cell.get_text(
+            " ",
+            strip=True
+        )
 
         date_match = re.search(
             r"(\d{2}\.\d{2}\.\d{2})",
@@ -44,7 +86,7 @@ def fetch_team_matches(team_url):
         )
 
         time_match = re.search(
-            r"(\d{1,2}:\d{2})",
+            r"(\d{1,2}\:\d{2})",
             date_text
         )
 
@@ -52,10 +94,12 @@ def fetch_team_matches(team_url):
             continue
 
         try:
+
             date_iso = datetime.strptime(
                 date_match.group(1),
                 "%d.%m.%y"
             ).strftime("%Y-%m-%d")
+
         except Exception:
             continue
 
@@ -64,21 +108,57 @@ def fetch_team_matches(team_url):
         if len(clubs) < 2:
             continue
 
-        home = clubs[0].get_text(strip=True)
-        away = clubs[1].get_text(strip=True)
+        home_team = clubs[0].get_text(
+            strip=True
+        )
+
+        away_team = clubs[1].get_text(
+            strip=True
+        )
+
+        match_link = ""
+
+        score_link = game_row.select_one(
+            ".column-score a"
+        )
+
+        if score_link:
+            match_link = score_link.get(
+                "href",
+                ""
+            )
+
+        competition = ""
+
+        competition_cell = competition_row.select_one(
+            ".column-team"
+        )
+
+        if competition_cell:
+            competition = competition_cell.get_text(
+                strip=True
+            )
 
         matches.append({
-            "home": home,
-            "away": away,
+            "home": home_team,
+            "away": away_team,
             "date": date_iso,
-            "time": time_match.group(1) if time_match else "00:00",
+            "time": (
+                time_match.group(1)
+                if time_match
+                else "00:00"
+            ),
+            "competition": competition,
             "location": "",
-            "pitch": ""
+            "pitch": "",
+            "url": match_link
         })
 
-    print(f"Insgesamt {len(matches)} Spiele gefunden")
+    print(
+        f"Insgesamt {len(matches)} Spiele gefunden"
+    )
 
-    for m in matches[:5]:
-        print(m)
+    for match in matches[:10]:
+        print(match)
 
     return matches
