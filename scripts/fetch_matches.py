@@ -41,7 +41,6 @@ def fetch_team_matches(team_url):
         location = ""
         pitch = ""
 
-        # Suche nach zusätzlicher Info im letzten oder vorletzten Feld
         extra_cols = cols[5:] if len(cols) > 5 else []
         for c in extra_cols:
             txt = c.get_text(" ", strip=True)
@@ -58,8 +57,37 @@ def fetch_team_matches(team_url):
         else:
             pitch = ""
 
-        # Datum/Uhrzeit in ein sauberes Format bringen
-        # Beispiel: "So, 15.09.2026" / "15:00"
+        # Datum normalisieren
         try:
-            # alles Nicht-Ziffern raus, dann Tag.Monat.Jahr parsen
-            date_clean = "".join(ch for ch in date
+            date_clean = "".join(ch for ch in date_text if ch.isdigit() or ch == ".")
+            dt = datetime.strptime(date_clean, "%d.%m.%Y")
+            date_iso = dt.strftime("%Y-%m-%d")
+        except Exception:
+            date_iso = date_text  # Fallback
+
+        # Uhrzeit normalisieren
+        try:
+            time_clean = time_text.strip()
+            if len(time_clean) > 5:
+                time_clean = time_clean[:5]
+        except Exception:
+            time_clean = "00:00"
+
+        matches.append(
+            {
+                "home": home_team,
+                "away": away_team,
+                "date": date_iso,
+                "time": time_clean,
+                "location": location,
+                "pitch": pitch,
+            }
+        )
+
+    return matches
+
+
+if __name__ == "__main__":
+    TEST_URL = "https://www.fussball.de/team/u15-tsv-nieukerk/-/id/123/"
+    for m in fetch_team_matches(TEST_URL):
+        print(m)
