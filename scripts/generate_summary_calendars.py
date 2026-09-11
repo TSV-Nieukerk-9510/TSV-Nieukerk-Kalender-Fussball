@@ -17,13 +17,20 @@ def load_teams():
         return json.load(f)
 
 
+
 def get_team_code(calendar_name):
 
-    return (
+    base = (
         calendar_name
         .replace(".ics", "")
-        .rsplit("-", 1)[0]
     )
+
+    parts = base.split("-")
+
+    if len(parts) >= 2:
+        return parts[-2]
+
+    return base    
 
 
 def get_pitch_code(match):
