@@ -127,7 +127,6 @@ def fetch_match_location(match_url):
         print(e)
 
         return "", ""
-``
 
 def fetch_team_matches(team_id):
 
