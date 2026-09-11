@@ -30,10 +30,20 @@ jobs:
       - name: Kalender generieren
         run: python scripts/generate_calendars.py
 
-      - name: Änderungen committen
+- name: Änderungen committen
         run: |
           git config user.name "TSV Kalender Bot"
-          git config user.email "fussballjugendobmann@tsv-nieukerk.de"
+          git config user.email "kalender@tsv-nieukerk.de"
           git add kalender/*.ics
           git commit -m "Automatische Kalender-Aktualisierung" || echo "Keine Änderungen"
-          git push
+
+      - name: Pull Request erstellen
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Automatische Kalender-Aktualisierung"
+          title: "Automatische Kalender-Aktualisierung"
+          body: "Neue Kalenderdateien wurden generiert."
+          branch: kalender-update
+
+
