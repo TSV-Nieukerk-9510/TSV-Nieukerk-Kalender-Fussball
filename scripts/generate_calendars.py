@@ -1,37 +1,53 @@
-# scripts/generate_calendars.py
-
+import json
 import os
+
 from datetime import datetime
 from ics import Calendar, Event
 
 from scripts.fetch_matches import fetch_team_matches
 
 
+def load_teams():
+
+    with open(
+        "config/teams.json",
+        "r",
+        encoding="utf-8"
+    ) as f:
+        return json.load(f)
+
+
 def is_valid_date(date_str):
-    """Prüft, ob ein Datum YYYY-MM-DD ist."""
+
     try:
-        datetime.strptime(date_str, "%Y-%m-%d")
+        datetime.strptime(
+            date_str,
+            "%Y-%m-%d"
+        )
         return True
+
     except Exception:
         return False
 
 
-def create_calendar(team_name, matches):
+def create_calendar(team, matches):
 
-    print(f"\nErzeuge Kalender für {team_name}")
+    team_name = team["name"]
+
+    print(
+        f"\nErzeuge Kalender für "
+        f"{team_name}"
+    )
 
     cal = Calendar()
+
     added_events = 0
 
     for m in matches:
 
-        print("Prüfe Spiel:", m)
-
-        if not is_valid_date(m["date"]):
-            print(
-                f"Übersprungen (ungültiges Datum): "
-                f"{m['home']} vs {m['away']} | {m['date']}"
-            )
+        if not is_valid_date(
+            m["date"]
+        ):
             continue
 
         try:
@@ -49,32 +65,25 @@ def create_calendar(team_name, matches):
 
             event.begin = dt
 
-            location = m.get("location", "")
+            description = []
 
-            if m.get("pitch"):
-                location = (
-                    f"{location} ({m['pitch']})"
-                )
-
-            if location:
-                event.location = location
-
-            description_parts = []
+            description.append(
+                f"Mannschaft: {team['name']}"
+            )
 
             if m.get("competition"):
-                description_parts.append(
+                description.append(
                     f"Wettbewerb: {m['competition']}"
                 )
 
-            if m.get("url"):
-                description_parts.append(
-                    f"Spieldetails: {m['url']}"
-                )
+            description.append(
+                f"Mannschaftsseite: "
+                f"{team['url']}"
+            )
 
-            if description_parts:
-                event.description = "\n".join(
-                    description_parts
-                )
+            event.description = (
+                "\n".join(description)
+            )
 
             cal.events.add(event)
 
@@ -83,22 +92,38 @@ def create_calendar(team_name, matches):
         except Exception as e:
 
             print(
-                "Fehler beim Erzeugen des Events:"
+                "Fehler beim Event:"
             )
+
             print(e)
 
-    os.makedirs("kalender", exist_ok=True)
+    os.makedirs(
+        "kalender",
+        exist_ok=True
+    )
 
     filename = os.path.join(
         "kalender",
-        f"{team_name}.ics"
+        team["calendar"]
     )
 
-    with open(filename, "w", encoding="utf-8") as f:
+    with open(
+        filename,
+        "w",
+        encoding="utf-8"
+    ) as f:
+
         f.writelines(cal)
 
-    print(f"Datei geschrieben: {filename}")
-    print(f"Events im Kalender: {added_events}")
+    print(
+        f"Datei geschrieben: "
+        f"{filename}"
+    )
+
+    print(
+        f"Events im Kalender: "
+        f"{added_events}"
+    )
 
 
 def main():
@@ -107,53 +132,46 @@ def main():
     print("TSV Kalender Generator gestartet")
     print("====================================")
 
-    teams = {
-        "TSV Nieukerk":
-        "https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI9ICMK000000VTVG0001VTR8C1K7#!/",
+    teams = load_teams()
 
-        "TSV Nieukerk Senioren":
-        "https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIDHQJ0000000VTVG0001VTR8C1K7#!/"
-    }
+    print(
+        f"Gefundene Teams: "
+        f"{len(teams)}"
+    )
 
-    print(f"Gefundene Teams: {len(teams)}")
-
-    for team_name, team_url in teams.items():
-
-        print("\n------------------------------------")
-        print(f"Team: {team_name}")
-        print(f"URL: {team_url}")
-        print("------------------------------------")
+    for team in teams:
 
         try:
 
-            print("Rufe fetch_team_matches auf...")
+            print("\n------------------------------------")
+            print(
+                f"Team: {team['name']}"
+            )
+            print(
+                f"Team-ID: {team['team_id']}"
+            )
+            print("------------------------------------")
 
             matches = fetch_team_matches(
-                team_url
+                team["team_id"]
             )
 
             print(
-                f"fetch_team_matches liefert "
-                f"{len(matches)} Spiele"
+                f"{len(matches)} Spiele gefunden"
             )
 
-            if len(matches) == 0:
-                print(
-                    "WARNUNG: Keine Spiele gefunden!"
-                )
-
-            for m in matches[:10]:
-                print(m)
-
             create_calendar(
-                team_name,
+                team,
                 matches
             )
 
         except Exception as e:
 
-            print("\nFEHLER BEI TEAM:")
-            print(team_name)
+            print(
+                f"Fehler bei "
+                f"{team['name']}"
+            )
+
             print(str(e))
 
     print("\nFertig.")
