@@ -161,7 +161,6 @@ def fetch_match_location(match_url):
 
         return "", ""
 
-
 def fetch_team_matches(team_id):
 
     matchplan_url = (
@@ -197,7 +196,9 @@ def fetch_team_matches(team_id):
 
     for competition_row in competition_rows:
 
-        game_row = competition_row.find_next_sibling("tr")
+        game_row = competition_row.find_next_sibling(
+            "tr"
+        )
 
         if not game_row:
             continue
@@ -237,28 +238,77 @@ def fetch_team_matches(team_id):
         except Exception:
             continue
 
-        clubs = game_row.select(".club-name")
+        clubs = game_row.select(
+            ".club-name"
+        )
 
         if len(clubs) < 2:
             continue
-        
+
         home_team = clubs[0].get_text(
             strip=True
         )
-        
+
         away_team = clubs[1].get_text(
             strip=True
         )
-        
+
         competition = ""
-        
-        competition_cell = competition_row.select_one(
-            ".column-team"
+
+        competition_cell = (
+            competition_row.select_one(
+                ".column-team"
+            )
         )
-        
+
         if competition_cell:
-        
+
             competition = (
                 competition_cell
                 .get_text(strip=True)
             )
+
+        match_link = ""
+
+        score_link = game_row.select_one(
+            ".column-score a"
+        )
+
+        if score_link:
+
+            match_link = score_link.get(
+                "href",
+                ""
+            )
+
+        location = ""
+        pitch = ""
+
+        if match_link:
+
+            location, pitch = (
+                fetch_match_location(
+                    match_link
+                )
+            )
+
+        matches.append({
+            "home": home_team,
+            "away": away_team,
+            "date": date_iso,
+            "time": (
+                time_match.group(1)
+                if time_match
+                else "00:00"
+            ),
+            "competition": competition,
+            "location": location,
+            "pitch": pitch,
+            "match_url": match_link
+        })
+
+    print(
+        f"Insgesamt {len(matches)} Spiele gefunden"
+    )
+
+    return matches
