@@ -22,19 +22,10 @@ jobs:
         run: |
           pip install ics beautifulsoup4 lxml requests
 
-      - name: Arbeitsverzeichnis setzen
-        run: cd $GITHUB_WORKSPACE
-
       - name: Kalender generieren
         run: |
           export PYTHONPATH="$PYTHONPATH:$GITHUB_WORKSPACE"
           python -u scripts/generate_calendars.py
-
-      # - name: Debug-Datei hochladen
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: debug-fussball
-      #     path: debug_fussball.html
 
       - name: Pull Request erstellen
         id: cpr
@@ -47,10 +38,13 @@ jobs:
           branch: kalender-update
           delete-branch: true
 
-      - name: PR-Information ausgeben
+      - name: PR-Information
         if: steps.cpr.outputs.pull-request-number
         run: |
           echo "PR Nummer: ${{ steps.cpr.outputs.pull-request-number }}"
 
       - name: Pull Request mergen
-        if: steps.cpr.outputs.pull-
+        if: steps.cpr.outputs.pull-request-number
+        run: gh pr merge ${{ steps.cpr.outputs.pull-request-number }} --squash --delete-branch
+        env:
+          GH_TOKEN: ${{ secrets.PAT_PUSH }}
