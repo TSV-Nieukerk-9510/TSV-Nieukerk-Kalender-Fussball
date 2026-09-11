@@ -1,57 +1,145 @@
-# scripts/generate_calendars.py
+# scripts/fetch_matches.py
 
-import os
+import re
+import requests
+from bs4 import BeautifulSoup
 from datetime import datetime
-from ics import Calendar, Event
-from scripts.fetch_matches import fetch_team_matches
 
 
-def is_valid_date(date_str):
-    """Prüft, ob ein Datum im Format YYYY-MM-DD ist."""
-    try:
-        datetime.strptime(date_str, "%Y-%m-%d")
-        return True
-    except:
-        return False
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/128.0 Safari/537.36"
+    )
+}
 
 
-def create_calendar(team_name, matches):
-    cal = Calendar()
+def normalize_date(text):
+    text = text.strip()
 
-    for m in matches:
-        # Spiele ohne gültiges Datum überspringen
-        if not is_valid_date(m["date"]):
-            print(f"  → Spiel übersprungen (ungültiges Datum): {m['home']} vs {m['away']}")
+    patterns = [
+        "%d.%m.%Y",
+        "%d.%m.%y",
+    ]
+
+    for pattern in patterns:
+        try:
+            return datetime.strptime(text, pattern).strftime("%Y-%m-%d")
+        except ValueError:
+            pass
+
+    match = re.search(r"(\d{2}\.\d{2}\.\d{4})", text)
+    if match:
+        try:
+            return datetime.strptime(
+                match.group(1),
+                "%d.%m.%Y"
+            ).strftime("%Y-%m-%d")
+        except ValueError:
+            pass
+
+    return None
+
+
+def normalize_time(text):
+    if not text:
+        return "00:00"
+
+    match = re.search(r"(\d{1,2}:\d{2})", text)
+    if match:
+        return match.group(1)
+
+    return "00:00"
+
+
+def fetch_team_matches(team_url):
+    print(f"Lade: {team_url}")
+
+    response = requests.get(
+        team_url,
+        headers=HEADERS,
+        timeout=30
+    )
+
+    response.raise_for_status()
+
+    print("HTTP:", response.status_code)
+
+    soup = BeautifulSoup(response.text, "lxml")
+
+    matches = []
+
+    # Debug-Datei schreiben
+    with open("debug_fussball.html", "w", encoding="utf-8") as f:
+        f.write(response.text)
+
+    # Alle Tabellen untersuchen
+    rows = soup.find_all("tr")
+
+    print(f"Gefundene Tabellenzeilen: {len(rows)}")
+
+    for row in rows:
+        cells = row.find_all(["td", "th"])
+
+        texts = [
+            cell.get_text(" ", strip=True)
+            for cell in cells
+        ]
+
+        if len(texts) < 4:
             continue
 
-        event = Event()
-        event.name = f"{m['home']} vs {m['away']}"
-        event.begin = f"{m['date']} {m['time']}"
-        event.location = f"{m['location']} ({m['pitch']})"
-        cal.events.add(event)
+        joined = " | ".join(texts)
 
-    os.makedirs("kalender", exist_ok=True)
-    filename = os.path.join("kalender", f"{team_name}.ics")
+        date_match = re.search(
+            r"\d{2}\.\d{2}\.\d{4}",
+            joined
+        )
 
-    with open(filename, "w", encoding="utf-8") as f:
-        f.write(str(cal))
+        time_match = re.search(
+            r"\d{1,2}:\d{2}",
+            joined
+        )
 
+        if not date_match:
+            continue
 
-def main():
-    teams = {
-        "TSV Nieukerk":
-            "https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI9ICMK000000VTVG0001VTR8C1K7"
-    }
+        date_iso = normalize_date(date_match.group())
 
-    print(f"Gefundene Teams: {len(teams)}")
+        if not date_iso:
+            continue
 
-    for team_name, team_url in teams.items():
-        print(f"→ Lade Spiele für {team_name}")
-        matches = fetch_team_matches(team_url)
-        print(f"  {len(matches)} Spiele gefunden")
+        time_str = (
+            normalize_time(time_match.group())
+            if time_match
+            else "00:00"
+        )
 
-        create_calendar(team_name, matches)
+        home = ""
+        away = ""
 
+        if len(texts) >= 2:
+            home = texts[0]
+            away = texts[1]
 
-if __name__ == "__main__":
-    main()
+        if not home or not away:
+            continue
+
+        match = {
+            "home": home,
+            "away": away,
+            "date": date_iso,
+            "time": time_str,
+            "location": "",
+            "pitch": ""
+        }
+
+        matches.append(match)
+
+    print(f"Ermittelte Spiele: {len(matches)}")
+
+    for m in matches[:10]:
+        print(m)
+
+    return matches
