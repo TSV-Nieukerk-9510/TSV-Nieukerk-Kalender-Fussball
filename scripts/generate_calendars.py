@@ -1,12 +1,63 @@
+import json
+import os
+
+from datetime import datetime
+from ics import Calendar, Event
+
+from scripts.fetch_matches import fetch_team_matches
+
+
 print("### SCRIPT STARTET ###")
+
+
+def load_teams():
+
+    print("Öffne config/teams.json")
+
+    if not os.path.exists("config/teams.json"):
+        raise FileNotFoundError(
+            "config/teams.json wurde nicht gefunden"
+        )
+
+    with open(
+        "config/teams.json",
+        "r",
+        encoding="utf-8"
+    ) as f:
+
+        content = f.read()
+
+    print("Inhalt teams.json:")
+
+    print(content)
+
+    teams = json.loads(content)
+
+    print(
+        f"{len(teams)} Teams geladen"
+    )
+
+    return teams
+
+
+def is_valid_date(date_str):
+
+    try:
+        datetime.strptime(
+            date_str,
+            "%Y-%m-%d"
+        )
+        return True
+
+    except Exception:
+        return False
+
 
 def create_calendar(team, matches):
 
-    team_name = team["name"]
-
     print(
         f"\nErzeuge Kalender für "
-        f"{team_name}"
+        f"{team['name']}"
     )
 
     cal = Calendar()
@@ -51,7 +102,9 @@ def create_calendar(team, matches):
             if m.get("pitch"):
 
                 if location:
-                    location += f" ({m['pitch']})"
+                    location += (
+                        f" ({m['pitch']})"
+                    )
                 else:
                     location = m["pitch"]
 
@@ -70,7 +123,8 @@ def create_calendar(team, matches):
 
             if m.get("competition"):
                 description.append(
-                    f"Wettbewerb: {m['competition']}"
+                    f"Wettbewerb: "
+                    f"{m['competition']}"
                 )
 
             if m.get("location"):
@@ -110,7 +164,7 @@ def create_calendar(team, matches):
                 "Fehler beim Event:"
             )
 
-            print(e)
+            print(str(e))
 
     os.makedirs(
         "kalender",
@@ -120,6 +174,10 @@ def create_calendar(team, matches):
     filename = os.path.join(
         "kalender",
         team["calendar"]
+    )
+
+    print(
+        f"Schreibe Datei: {filename}"
     )
 
     with open(
@@ -139,3 +197,97 @@ def create_calendar(team, matches):
         f"Events im Kalender: "
         f"{added_events}"
     )
+
+
+def main():
+
+    print("====================================")
+    print("TSV Kalender Generator gestartet")
+    print("====================================")
+
+    print(
+        "Aktuelles Verzeichnis:"
+    )
+
+    print(os.getcwd())
+
+    print(
+        "Dateien im Root:"
+    )
+
+    print(os.listdir("."))
+
+    if os.path.exists("config"):
+
+        print(
+            "Dateien in config:"
+        )
+
+        print(
+            os.listdir("config")
+        )
+
+    teams = load_teams()
+
+    print(
+        f"Gefundene Teams: "
+        f"{len(teams)}"
+    )
+
+    for team in teams:
+
+        print(
+            "\n============================"
+        )
+
+        print(
+            f"Team: {team['name']}"
+        )
+
+        print(
+            f"Kalender: "
+            f"{team['calendar']}"
+        )
+
+        print(
+            f"Team-ID: "
+            f"{team['team_id']}"
+        )
+
+        print(
+            "============================"
+        )
+
+        try:
+
+            matches = fetch_team_matches(
+                team["team_id"]
+            )
+
+            print(
+                f"{len(matches)} "
+                f"Spiele gefunden"
+            )
+
+            create_calendar(
+                team,
+                matches
+            )
+
+        except Exception as e:
+
+            print(
+                "FEHLER BEI TEAM:"
+            )
+
+            print(
+                team["name"]
+            )
+
+            print(str(e))
+
+    print("\nFertig.")
+
+
+if __name__ == "__main__":
+    main()
