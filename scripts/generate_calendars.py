@@ -1,147 +1,130 @@
-# scripts/fetch_matches.py
+# scripts/generate_calendars.py
 
-import re
-import requests
-from bs4 import BeautifulSoup
+import os
 from datetime import datetime
+from ics import Calendar, Event
+
+from scripts.fetch_matches import fetch_team_matches
 
 
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/128.0 Safari/537.36"
-    )
-}
+def is_valid_date(date_str):
+    """Prüft, ob ein Datum YYYY-MM-DD ist."""
+    try:
+        datetime.strptime(date_str, "%Y-%m-%d")
+        return True
+    except Exception:
+        return False
 
 
-def normalize_date(text):
-    text = text.strip()
+def create_calendar(team_name, matches):
+    print(f"\nErzeuge Kalender für {team_name}")
 
-    patterns = [
-        "%d.%m.%Y",
-        "%d.%m.%y",
-    ]
+    cal = Calendar()
+    added_events = 0
 
-    for pattern in patterns:
+    for m in matches:
+
+        print("Prüfe Spiel:", m)
+
+        if not is_valid_date(m["date"]):
+            print(
+                f"Übersprungen (ungültiges Datum): "
+                f"{m['home']} vs {m['away']} | {m['date']}"
+            )
+            continue
+
         try:
-            return datetime.strptime(text, pattern).strftime("%Y-%m-%d")
-        except ValueError:
-            pass
+            event = Event()
 
-    match = re.search(r"(\d{2}\.\d{2}\.\d{4})", text)
-    if match:
-        try:
-            return datetime.strptime(
-                match.group(1),
-                "%d.%m.%Y"
-            ).strftime("%Y-%m-%d")
-        except ValueError:
-            pass
+            event.name = f"{m['home']} vs {m['away']}"
 
-    return None
+            dt = datetime.strptime(
+                f"{m['date']} {m['time']}",
+                "%Y-%m-%d %H:%M"
+            )
 
+            event.begin = dt
 
-def normalize_time(text):
-    if not text:
-        return "00:00"
+            location = m.get("location", "")
 
-    match = re.search(r"(\d{1,2}:\d{2})", text)
-    if match:
-        return match.group(1)
+            if m.get("pitch"):
+                location = f"{location} ({m['pitch']})"
 
-    return "00:00"
+            event.location = location
 
+            cal.events.add(event)
 
-def fetch_team_matches(team_url):
-    print(f"Lade: {team_url}")
+            added_events += 1
 
-    response = requests.get(
-        team_url,
-        headers=HEADERS,
-        timeout=30
+        except Exception as e:
+            print("Fehler beim Erzeugen des Events:")
+            print(e)
+
+    os.makedirs("kalender", exist_ok=True)
+
+    filename = os.path.join(
+        "kalender",
+        f"{team_name}.ics"
     )
 
-    response.raise_for_status()
+    with open(filename, "w", encoding="utf-8") as f:
+        f.writelines(cal)
 
-    print("HTTP:", response.status_code)
+    print(f"Datei geschrieben: {filename}")
+    print(f"Events im Kalender: {added_events}")
 
-    soup = BeautifulSoup(response.text, "lxml")
 
-    matches = []
+def main():
 
-    # Debug-Datei schreiben
-    print("HTML wird gespeichert")
-    with open("debug_fussball.html", "w", encoding="utf-8") as f:
-        f.write(response.text)
-    print("HTML gespeichert")
-    
-    # Alle Tabellen untersuchen
-    rows = soup.find_all("tr")
+    print("====================================")
+    print("TSV Kalender Generator gestartet")
+    print("====================================")
 
-    print(f"Gefundene Tabellenzeilen: {len(rows)}")
+    teams = {
+        "TSV Nieukerk":
+        "https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI9ICMK000000VTVG0001VTR8C1K7#!/"
+    }
 
-    for row in rows:
-        cells = row.find_all(["td", "th"])
+    print(f"Gefundene Teams: {len(teams)}")
 
-        texts = [
-            cell.get_text(" ", strip=True)
-            for cell in cells
-        ]
+    for team_name, team_url in teams.items():
 
-        if len(texts) < 4:
-            continue
+        print("\n------------------------------------")
+        print(f"Team: {team_name}")
+        print(f"URL: {team_url}")
+        print("------------------------------------")
 
-        joined = " | ".join(texts)
+        try:
 
-        date_match = re.search(
-            r"\d{2}\.\d{2}\.\d{4}",
-            joined
-        )
+            print("Rufe fetch_team_matches auf...")
 
-        time_match = re.search(
-            r"\d{1,2}:\d{2}",
-            joined
-        )
+            matches = fetch_team_matches(team_url)
 
-        if not date_match:
-            continue
+            print(
+                f"fetch_team_matches liefert "
+                f"{len(matches)} Spiele"
+            )
 
-        date_iso = normalize_date(date_match.group())
+            if len(matches) == 0:
+                print(
+                    "WARNUNG: Keine Spiele gefunden!"
+                )
 
-        if not date_iso:
-            continue
+            for m in matches[:10]:
+                print(m)
 
-        time_str = (
-            normalize_time(time_match.group())
-            if time_match
-            else "00:00"
-        )
+            create_calendar(team_name, matches)
 
-        home = ""
-        away = ""
+        except Exception as e:
 
-        if len(texts) >= 2:
-            home = texts[0]
-            away = texts[1]
+            print("FEHLER BEI TEAM:")
+            print(team_name)
+            print(str(e))
 
-        if not home or not away:
-            continue
+            raise
 
-        match = {
-            "home": home,
-            "away": away,
-            "date": date_iso,
-            "time": time_str,
-            "location": "",
-            "pitch": ""
-        }
+    print("\nFertig.")
 
-        matches.append(match)
 
-    print(f"Ermittelte Spiele: {len(matches)}")
-
-    for m in matches[:10]:
-        print(m)
-
-    return matches
+if __name__ == "__main__":
+    main()
