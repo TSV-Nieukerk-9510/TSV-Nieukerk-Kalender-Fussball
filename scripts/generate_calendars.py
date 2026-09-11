@@ -3,7 +3,7 @@
 import os
 from datetime import datetime
 from ics import Calendar, Event
-from scripts.fetch_team_matches import fetch_team_matches
+from scripts.fetch_matches import fetch_team_matches
 
 
 def is_valid_date(date_str):
