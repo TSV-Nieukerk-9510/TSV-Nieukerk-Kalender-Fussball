@@ -1,41 +1,25 @@
-import json
-import os
-from datetime import datetime
-from ics import Calendar, Event
-from scripts.fetch_matches import fetch_team_matches
-
-def load_teams():
-    with open(
-        "config/teams.json",
-        "r",
-        encoding="utf-8"
-    ) as f:
-        return json.load(f)
-
-def is_valid_date(date_str):
-    try:
-        datetime.strptime(
-            date_str,
-            "%Y-%m-%d"
-        )
-        return True
-    except Exception:
-        return False
-
 def create_calendar(team, matches):
+
     team_name = team["name"]
+
     print(
         f"\nErzeuge Kalender für "
         f"{team_name}"
     )
+
     cal = Calendar()
+
     added_events = 0
+
     for m in matches:
+
         if not is_valid_date(
             m["date"]
         ):
             continue
+
         try:
+
             event = Event()
 
             event.name = (
@@ -56,11 +40,15 @@ def create_calendar(team, matches):
                 f"{m['home']}-"
                 f"{m['away']}"
             ).replace(" ", "_")
-            
+
             description = []
 
             description.append(
                 f"Mannschaft: {team['name']}"
+            )
+
+            description.append(
+                f"Saison: {team['season']}"
             )
 
             if m.get("competition"):
@@ -69,8 +57,7 @@ def create_calendar(team, matches):
                 )
 
             description.append(
-                f"Mannschaftsseite: "
-                f"{team['url']}"
+                f"Mannschaftsseite: {team['url']}"
             )
 
             event.description = (
@@ -116,58 +103,3 @@ def create_calendar(team, matches):
         f"Events im Kalender: "
         f"{added_events}"
     )
-
-
-def main():
-
-    print("====================================")
-    print("TSV Kalender Generator gestartet")
-    print("====================================")
-
-    teams = load_teams()
-
-    print(
-        f"Gefundene Teams: "
-        f"{len(teams)}"
-    )
-
-    for team in teams:
-
-        try:
-
-            print("\n------------------------------------")
-            print(
-                f"Team: {team['name']}"
-            )
-            print(
-                f"Team-ID: {team['team_id']}"
-            )
-            print("------------------------------------")
-
-            matches = fetch_team_matches(
-                team["team_id"]
-            )
-
-            print(
-                f"{len(matches)} Spiele gefunden"
-            )
-
-            create_calendar(
-                team,
-                matches
-            )
-
-        except Exception as e:
-
-            print(
-                f"Fehler bei "
-                f"{team['name']}"
-            )
-
-            print(str(e))
-
-    print("\nFertig.")
-
-
-if __name__ == "__main__":
-    main()
