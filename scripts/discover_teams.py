@@ -6,9 +6,6 @@ import requests
 from bs4 import BeautifulSoup
 
 
-CLUB_ID = "00ES8GN8UK0000ALVV0AG08LVUPGND5I"
-SEASON = "2627"
-
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -18,34 +15,15 @@ HEADERS = {
 }
 
 
-def create_calendar_name(team_name):
+def load_club_config():
 
-    calendar = team_name
+    with open(
+        "config/club.json",
+        "r",
+        encoding="utf-8"
+    ) as f:
 
-    calendar = calendar.replace(" - ", "-")
-    calendar = calendar.replace(" / ", "-")
-    calendar = calendar.replace("/", "-")
-    calendar = calendar.replace("(", "")
-    calendar = calendar.replace(")", "")
-    calendar = calendar.replace("​", "")
-
-    calendar = re.sub(
-        r"[^A-Za-z0-9ÄÖÜäöüß-]+",
-        "-",
-        calendar
-    )
-
-    calendar = re.sub(
-        r"-+",
-        "-",
-        calendar
-    )
-
-    calendar = calendar.strip("-")
-
-    return (
-        f"{calendar}-{SEASON}.ics"
-    )
+        return json.load(f)
 
 
 def extract_team_id(url):
@@ -61,11 +39,87 @@ def extract_team_id(url):
     return ""
 
 
+def create_calendar_name(team_name, season):
+
+    team_name = (
+        team_name
+        .replace("\u200b", "")
+        .replace("​", "")
+        .strip()
+    )
+
+    mappings = {
+
+        "Herren - TSV Nieukerk":
+            f"TSV-H1-{season}.ics",
+
+        "Herren - TSV Nieukerk II":
+            f"TSV-H2-{season}.ics",
+
+        "A-Junioren - JSG Aldekerk / Nieukerk":
+            f"JSG-A1-{season}.ics",
+
+        "B-Junioren - JSG Nieukerk / Aldekerk":
+            f"JSG-B1-{season}.ics",
+
+        "C-Junioren - JSG Aldekerk / Nieukerk":
+            f"JSG-C1-{season}.ics",
+
+        "C-Junioren - JSG Aldekerk / Nieukerk II":
+            f"JSG-C2-{season}.ics",
+
+        "D-Junioren - TSV Nieukerk":
+            f"TSV-D1-{season}.ics",
+
+        "E-Junioren - TSV Nieukerk":
+            f"TSV-E1-{season}.ics",
+
+        "E-Junioren - TSV Nieukerk II":
+            f"TSV-E2-{season}.ics",
+
+        "F-Junioren - TSV Nieukerk":
+            f"TSV-F1-{season}.ics",
+
+        "F-Junioren - TSV Nieukerk II":
+            f"TSV-F2-{season}.ics",
+
+        "G-Junioren - TSV Nieukerk":
+            f"TSV-G1-{season}.ics",
+
+        "D-Juniorinnen - TSV Nieukerk":
+            f"TSV-DM-{season}.ics"
+    }
+
+    if team_name in mappings:
+        return mappings[team_name]
+
+    safe_name = re.sub(
+        r"[^A-Za-z0-9]+",
+        "-",
+        team_name
+    )
+
+    safe_name = re.sub(
+        r"-+",
+        "-",
+        safe_name
+    )
+
+    safe_name = safe_name.strip("-")
+
+    return f"{safe_name}-{season}.ics"
+
+
 def discover_teams():
+
+    club_config = load_club_config()
+
+    club_id = club_config["club_id"]
+    season = club_config["season"]
 
     ajax_url = (
         "https://www.fussball.de/ajax.club.teams/"
-        f"-/action/search/id/{CLUB_ID}"
+        f"-/action/search/id/{club_id}"
     )
 
     print(
@@ -76,7 +130,7 @@ def discover_teams():
         ajax_url,
         headers=HEADERS,
         data={
-            "saison": SEASON,
+            "saison": season,
             "mannschaftsart": "-1",
             "wettkampftyp": "-1"
         },
@@ -120,10 +174,11 @@ def discover_teams():
             strip=True
         )
 
-        team_name = re.sub(
-            r"\s+",
-            " ",
+        team_name = (
             team_name
+            .replace("\u200b", "")
+            .replace("​", "")
+            .strip()
         )
 
         team_id = extract_team_id(
@@ -133,12 +188,15 @@ def discover_teams():
         if not team_id:
             continue
 
+        calendar_name = create_calendar_name(
+            team_name,
+            season
+        )
+
         team = {
             "name": team_name,
-            "season": SEASON,
-            "calendar": create_calendar_name(
-                team_name
-            ),
+            "season": season,
+            "calendar": calendar_name,
             "team_id": team_id,
             "url": team_url,
             "include_location": True
@@ -148,20 +206,21 @@ def discover_teams():
 
         print(
             f"{team_name} "
-            f"({team_id})"
+            f"({team_id}) "
+            f"-> {calendar_name}"
         )
+
+    teams.sort(
+        key=lambda x: x["calendar"]
+    )
 
     os.makedirs(
         "config",
         exist_ok=True
     )
 
-    output_file = (
-        "config/teams.json"
-    )
-
     with open(
-        output_file,
+        "config/teams.json",
         "w",
         encoding="utf-8"
     ) as f:
@@ -174,12 +233,15 @@ def discover_teams():
         )
 
     print()
+
     print(
         f"{len(teams)} Teams gespeichert:"
     )
-    print(output_file)
+
+    print(
+        "config/teams.json"
+    )
 
 
 if __name__ == "__main__":
     discover_teams()
-
