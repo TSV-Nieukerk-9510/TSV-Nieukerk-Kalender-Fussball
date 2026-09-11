@@ -2,42 +2,29 @@ name: TSV Kalender Update
 
 on:
   schedule:
-    - cron: "0 4 * * *"   # täglich um 04:00
+    - cron: "0 4 * * *"
   workflow_dispatch:
 
 jobs:
-  update:
+  update-calendars:
     runs-on: ubuntu-latest
 
     steps:
       - name: Repository auschecken
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.PAT_PUSH }}
 
       - name: Python einrichten
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Phyton Pfad setzen
-        run: echo "PYTHONPATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV
-
-     # - name: Arbeitsverzeichnis setzen
-     #   run: cd $GITHUB_WORKSPACE
-
       - name: Abhängigkeiten installieren
-        run: pip install requests ics beautifulsoup4 lxml
+        run: |
+          pip install -r requirements.txt
 
       - name: Kalender generieren
-        run: python scripts/generate_calendars.py
-
-      - name: Änderungen committen
         run: |
-          git config user.name "TSV Kalender Bot"
-          git config user.email "fussballjugendobmann@tsv-nieukerk.de"
-          git add kalender/*.ics
-          git commit -m "Automatische Kalender-Aktualisierung" || echo "Keine Änderungen"
+          python scripts/generate_calendars.py
 
       - name: Pull Request erstellen
         id: cpr
@@ -49,12 +36,9 @@ jobs:
           body: "Neue Kalenderdateien wurden generiert."
           branch: kalender-update
 
-
       - name: Pull Request automatisch mergen
-        if: steps.cpr.outputs.pull_request_url != ''
+        if: always()
         run: |
-          gh pr merge ${{ steps.cpr.outputs.pull_request_url }} --squash --auto
+          gh pr merge kalender-update --squash --auto || echo "Kein PR zum Mergen gefunden."
         env:
           GH_TOKEN: ${{ secrets.PAT_PUSH }}
-
-
