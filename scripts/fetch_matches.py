@@ -1,5 +1,3 @@
-# scripts/fetch_matches.py
-
 import re
 import requests
 from bs4 import BeautifulSoup
@@ -15,20 +13,7 @@ HEADERS = {
 }
 
 
-def extract_team_id(team_url):
-    match = re.search(r"team-id/([^/#?]+)", team_url)
-
-    if not match:
-        raise ValueError(
-            f"Keine Team-ID in URL gefunden: {team_url}"
-        )
-
-    return match.group(1)
-
-
-def fetch_team_matches(team_url):
-
-    team_id = extract_team_id(team_url)
+def fetch_team_matches(team_id):
 
     matchplan_url = (
         f"https://www.fussball.de/ajax.team.matchplan/"
@@ -116,18 +101,6 @@ def fetch_team_matches(team_url):
             strip=True
         )
 
-        match_link = ""
-
-        score_link = game_row.select_one(
-            ".column-score a"
-        )
-
-        if score_link:
-            match_link = score_link.get(
-                "href",
-                ""
-            )
-
         competition = ""
 
         competition_cell = competition_row.select_one(
@@ -150,15 +123,9 @@ def fetch_team_matches(team_url):
             ),
             "competition": competition,
             "location": "",
-            "pitch": "",
-            "url": match_link
+            "pitch": ""
         })
 
-    print(
-        f"Insgesamt {len(matches)} Spiele gefunden"
-    )
-
-    for match in matches[:10]:
-        print(match)
+    print(f"Insgesamt {len(matches)} Spiele gefunden")
 
     return matches
