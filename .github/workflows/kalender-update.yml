@@ -50,4 +50,21 @@ jobs:
           merge-method: squash
           auto-merge: true
 
+- name: Pull Request erstellen
+        id: cpr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.PAT_PUSH }}
+          commit-message: "Automatische Kalender-Aktualisierung"
+          title: "Automatische Kalender-Aktualisierung"
+          body: "Neue Kalenderdateien wurden generiert."
+          branch: kalender-update
+
+      - name: Pull Request automatisch mergen
+        if: steps.cpr.outputs.pull-request-url != ''
+        run: |
+          gh pr merge ${{ steps.cpr.outputs.pull-request-url }} --squash --auto
+        env:
+          GH_TOKEN: ${{ secrets.PAT_PUSH }}
+
 
