@@ -20,7 +20,7 @@ def create_calendar(team_name, matches):
         cal.events.add(event)
 
     with open(os.path.join(OUTPUT_DIR, f"{team_name}.ics"), "w") as f:
-        f.writelines(cal)
+        f.write(str(cal))
 
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
