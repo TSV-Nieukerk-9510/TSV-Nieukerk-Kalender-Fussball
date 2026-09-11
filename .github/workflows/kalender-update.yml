@@ -21,6 +21,11 @@ jobs:
       - name: Abhängigkeiten installieren
         run: |
           pip install ics beautifulsoup4 lxml requests
+          
+      - name: Mannschaften ermitteln
+        run: |
+          export PYTHONPATH="$PYTHONPATH:$GITHUB_WORKSPACE"
+          python -u scripts/discover_teams.py
 
       - name: Kalender generieren
         run: |
