@@ -29,13 +29,13 @@ jobs:
       - name: Kalender generieren
         run: |
           export PYTHONPATH="$PYTHONPATH:$GITHUB_WORKSPACE"
-          python scripts/generate_calendars.py
+          python -u scripts/generate_calendars.py
 
-      - name: Debug-Datei hochladen
-        uses: actions/upload-artifact@v4
-        with: 
-          name: debug-fussball
-          path: debug_fussball.html    
+      #- name: Debug-Datei hochladen
+      #  uses: actions/upload-artifact@v4
+      #  with: 
+      #    name: debug-fussball
+      #    path: debug_fussball.html    
 
       - name: Pull Request erstellen
         id: cpr
