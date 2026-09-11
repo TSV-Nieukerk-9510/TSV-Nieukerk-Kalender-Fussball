@@ -40,7 +40,7 @@ jobs:
       - name: Pull Request erstellen
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_PUSH }}
           commit-message: "Automatische Kalender-Aktualisierung"
           title: "Automatische Kalender-Aktualisierung"
           body: "Neue Kalenderdateien wurden generiert."
