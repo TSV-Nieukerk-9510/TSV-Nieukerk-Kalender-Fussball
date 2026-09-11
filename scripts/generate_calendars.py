@@ -7,7 +7,7 @@ from scripts.fetch_team_matches import fetch_team_matches
 
 
 def is_valid_date(date_str):
-    """Prüft, ob ein Datum ISO-Format hat."""
+    """Prüft, ob ein Datum im Format YYYY-MM-DD ist."""
     try:
         datetime.strptime(date_str, "%Y-%m-%d")
         return True
@@ -19,7 +19,7 @@ def create_calendar(team_name, matches):
     cal = Calendar()
 
     for m in matches:
-        # Spiele ohne Datum überspringen
+        # Spiele ohne gültiges Datum überspringen
         if not is_valid_date(m["date"]):
             print(f"  → Spiel übersprungen (ungültiges Datum): {m['home']} vs {m['away']}")
             continue
