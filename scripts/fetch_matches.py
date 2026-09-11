@@ -1,5 +1,6 @@
 import re
 import requests
+
 from bs4 import BeautifulSoup
 from datetime import datetime
 
@@ -11,6 +12,81 @@ HEADERS = {
         "Chrome/128.0 Safari/537.36"
     )
 }
+
+
+def fetch_match_location(match_url):
+
+    if not match_url:
+        return "", ""
+
+    try:
+
+        response = requests.get(
+            match_url,
+            headers=HEADERS,
+            timeout=30
+        )
+
+        response.raise_for_status()
+
+        soup = BeautifulSoup(
+            response.text,
+            "html.parser"
+        )
+
+        text = soup.get_text(
+            " ",
+            strip=True
+        )
+
+        location = ""
+        pitch = ""
+
+        patterns = [
+            r"Sportanlage\s+([^|]+)",
+            r"Spielort\s+([^|]+)",
+            r"Austragungsort\s+([^|]+)"
+        ]
+
+        for pattern in patterns:
+
+            match = re.search(
+                pattern,
+                text,
+                re.IGNORECASE
+            )
+
+            if match:
+
+                location = (
+                    match.group(1)
+                    .strip()
+                    .replace("\n", " ")
+                )
+
+                break
+
+        if "Kunstrasen" in text:
+            pitch = "Kunstrasen"
+
+        elif "Naturrasen" in text:
+            pitch = "Naturrasen"
+
+        elif "Rasenplatz" in text:
+            pitch = "Rasenplatz"
+
+        return location, pitch
+
+    except Exception as e:
+
+        print(
+            f"Spielort konnte nicht gelesen werden: "
+            f"{match_url}"
+        )
+
+        print(e)
+
+        return "", ""
 
 
 def fetch_team_matches(team_id):
@@ -108,8 +184,34 @@ def fetch_team_matches(team_id):
         )
 
         if competition_cell:
-            competition = competition_cell.get_text(
-                strip=True
+
+            competition = (
+                competition_cell
+                .get_text(strip=True)
+            )
+
+        match_link = ""
+
+        score_link = game_row.select_one(
+            ".column-score a"
+        )
+
+        if score_link:
+
+            match_link = score_link.get(
+                "href",
+                ""
+            )
+
+        location = ""
+        pitch = ""
+
+        if match_link:
+
+            location, pitch = (
+                fetch_match_location(
+                    match_link
+                )
             )
 
         matches.append({
@@ -122,10 +224,13 @@ def fetch_team_matches(team_id):
                 else "00:00"
             ),
             "competition": competition,
-            "location": "",
-            "pitch": ""
+            "location": location,
+            "pitch": pitch,
+            "match_url": match_link
         })
 
-    print(f"Insgesamt {len(matches)} Spiele gefunden")
+    print(
+        f"Insgesamt {len(matches)} Spiele gefunden"
+    )
 
     return matches
