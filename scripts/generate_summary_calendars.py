@@ -62,8 +62,6 @@ def get_pitch_code(match):
 
 def get_opponent(match, team):
 
-    team_name = team["name"].lower()
-
     if (
         "tsv nieukerk"
         in match["home"].lower()
@@ -71,18 +69,36 @@ def get_opponent(match, team):
         "nieukerk"
         in match["home"].lower()
     ):
-        return match["away"], True
+        opponent = match["away"]
+        is_home = True
 
-    if (
+    elif (
         "tsv nieukerk"
         in match["away"].lower()
     ) or (
         "nieukerk"
         in match["away"].lower()
     ):
-        return match["home"], False
+        opponent = match["home"]
+        is_home = False
 
-    return match["away"], False
+    else:
+        opponent = match["away"]
+        is_home = False
+
+    opponent = opponent.replace(
+        " - Kinderfestival",
+        ""
+    )
+
+    opponent = opponent.replace(
+        " Kinderfestival",
+        ""
+    )
+
+    opponent = opponent.strip()
+
+    return opponent, is_home
 
 
 def create_event(team, match, mode):
@@ -118,7 +134,7 @@ def create_event(team, match, mode):
     if mode == "team":
 
         if is_festival:
-            title = "Kinderfestival"
+            title = "KFV"
         else:
             title = opponent
 
@@ -134,7 +150,7 @@ def create_event(team, match, mode):
             title = (
                 f"{home_away} - "
                 f"{team_code} - "
-                f"Kinderfestival"
+                f"KFV"
             )
         else:
             title = (
@@ -149,7 +165,7 @@ def create_event(team, match, mode):
 
             title = (
                 f"{team_code} - "
-                f"Kinderfestival - "
+                f"KFV - "
                 f"{pitch_code}"
             )
 
@@ -299,8 +315,8 @@ def main():
             )
 
             if team_code in [
-                "TSV-H1",
-                "TSV-H2"
+                "H1",
+                "H2"
             ]:
 
                 senior_events.append(
