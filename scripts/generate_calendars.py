@@ -1,14 +1,10 @@
 import json
 import os
-
 from datetime import datetime
 from ics import Calendar, Event
-
 from scripts.fetch_matches import fetch_team_matches
 
-
 def load_teams():
-
     with open(
         "config/teams.json",
         "r",
@@ -16,42 +12,30 @@ def load_teams():
     ) as f:
         return json.load(f)
 
-
 def is_valid_date(date_str):
-
     try:
         datetime.strptime(
             date_str,
             "%Y-%m-%d"
         )
         return True
-
     except Exception:
         return False
 
-
 def create_calendar(team, matches):
-
     team_name = team["name"]
-
     print(
         f"\nErzeuge Kalender für "
         f"{team_name}"
     )
-
     cal = Calendar()
-
     added_events = 0
-
     for m in matches:
-
         if not is_valid_date(
             m["date"]
         ):
             continue
-
         try:
-
             event = Event()
 
             event.name = (
@@ -65,6 +49,14 @@ def create_calendar(team, matches):
 
             event.begin = dt
 
+            event.uid = (
+                f"{team['team_id']}-"
+                f"{m['date']}-"
+                f"{m['time']}-"
+                f"{m['home']}-"
+                f"{m['away']}"
+            ).replace(" ", "_")
+            
             description = []
 
             description.append(
