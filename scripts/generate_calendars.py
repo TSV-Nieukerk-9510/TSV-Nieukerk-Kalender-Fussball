@@ -1,3 +1,5 @@
+print("### SCRIPT STARTET ###")
+
 def create_calendar(team, matches):
 
     team_name = team["name"]
