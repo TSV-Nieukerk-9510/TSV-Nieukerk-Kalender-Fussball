@@ -41,6 +41,21 @@ def create_calendar(team, matches):
                 f"{m['away']}"
             ).replace(" ", "_")
 
+            location = ""
+
+            if m.get("location"):
+                location = m["location"]
+
+            if m.get("pitch"):
+
+                if location:
+                    location += f" ({m['pitch']})"
+                else:
+                    location = m["pitch"]
+
+            if location:
+                event.location = location
+
             description = []
 
             description.append(
@@ -56,8 +71,27 @@ def create_calendar(team, matches):
                     f"Wettbewerb: {m['competition']}"
                 )
 
+            if m.get("location"):
+                description.append(
+                    f"Spielort: "
+                    f"{m['location']}"
+                )
+
+            if m.get("pitch"):
+                description.append(
+                    f"Belag: "
+                    f"{m['pitch']}"
+                )
+
+            if m.get("match_url"):
+                description.append(
+                    f"Spielseite: "
+                    f"{m['match_url']}"
+                )
+
             description.append(
-                f"Mannschaftsseite: {team['url']}"
+                f"Mannschaftsseite: "
+                f"{team['url']}"
             )
 
             event.description = (
