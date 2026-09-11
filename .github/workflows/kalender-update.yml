@@ -30,7 +30,12 @@ jobs:
       - name: Kalender generieren
         run: |
           export PYTHONPATH="$PYTHONPATH:$GITHUB_WORKSPACE"
-          python -u scripts/generate_calendars.py     
+          python -u scripts/generate_calendars.py   
+
+      - name: Sammelkalender erzeugen
+        run: |
+          export PYTHONPATH="$PYTHONPATH:$GITHUB_WORKSPACE"
+          python -u scripts/generate_summary_calendars.py    
           
       - name: QR-Codes erzeugen
         run: |
