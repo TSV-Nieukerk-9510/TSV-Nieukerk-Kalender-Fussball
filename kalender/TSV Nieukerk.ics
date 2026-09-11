@@ -2,28 +2,33 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DTSTART:20260926T111500Z
-SUMMARY:SV Viktoria Goch - Kinderfestival vs TSV Nieukerk
-UID:d47e0d9b-e5a5-4acb-a454-19b8fab0f399@d47e.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART:20261010T111500Z
-SUMMARY:SV Straelen - Kinderfestival vs TSV Nieukerk
-UID:cfc36c47-cb90-458a-bce6-6ed97bd2ba93@cfc3.org
-END:VEVENT
-BEGIN:VEVENT
+DESCRIPTION:Wettbewerb: Kinderfußball\nSpieldetails: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/031TRQLTRS00000KVS5489BTVT7QHFUC-G
 DTSTART:20261003T111500Z
 SUMMARY:TSV Nieukerk - Kinderfestival vs TSV Nieukerk
-UID:957afed9-ea3c-4b8d-bd68-705c41b5fd85@957a.org
+UID:da6c795a-8397-4557-9f3b-49b3f7d95e05@da6c.org
 END:VEVENT
 BEGIN:VEVENT
-DTSTART:20260912T111500Z
-SUMMARY:Alemannia Pfalzdorf - Kinderfestival vs TSV Nieukerk
-UID:61bbf378-9104-4cb9-b2e9-545ec541b648@61bb.org
-END:VEVENT
-BEGIN:VEVENT
+DESCRIPTION:Wettbewerb: Kinderfußball\nSpieldetails: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/031TRQLTRS000003VS5489BTVT7QHFUC-G
 DTSTART:20260922T170000Z
 SUMMARY:TSV Nieukerk - Kinderfestival vs TSV Nieukerk
-UID:008f0d27-8edb-4530-b252-1e9add8e73e0@008f.org
+UID:3efd75d6-ce76-4ca9-91b4-8c61e3cfa06e@3efd.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Wettbewerb: Kinderfußball\nSpieldetails: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/031TRQLTRS00000DVS5489BTVT7QHFUC-G
+DTSTART:20260926T111500Z
+SUMMARY:SV Viktoria Goch - Kinderfestival vs TSV Nieukerk
+UID:e09603c8-698a-44df-af65-c45bdfb0ba44@e096.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Wettbewerb: Kinderfußball\nSpieldetails: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/031TRQLTS0000002VS5489BTVT7QHFUC-G
+DTSTART:20261010T111500Z
+SUMMARY:SV Straelen - Kinderfestival vs TSV Nieukerk
+UID:63709b58-514b-47d1-9c68-b4b9994ce022@6370.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Wettbewerb: Kinderfußball\nSpieldetails: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/031TRQLTRO00000CVS5489BTVT7QHFUC-G
+DTSTART:20260912T111500Z
+SUMMARY:Alemannia Pfalzdorf - Kinderfestival vs TSV Nieukerk
+UID:b5ce54bf-0eca-4b4d-8a93-18f29f5e7f49@b5ce.org
 END:VEVENT
 END:VCALENDAR
