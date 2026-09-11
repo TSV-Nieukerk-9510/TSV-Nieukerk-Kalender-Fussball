@@ -22,6 +22,9 @@ jobs:
         run: |
           pip install ics beautifulsoup4 lxml requests
 
+      - name: Arbeitsverzeichnis setzen
+        run: cd $GITHUB_WORKSPACE
+
       - name: Kalender generieren
         run: |
           python scripts/generate_calendars.py
