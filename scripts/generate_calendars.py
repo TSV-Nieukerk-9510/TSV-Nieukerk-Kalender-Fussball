@@ -71,9 +71,11 @@ def fetch_team_matches(team_url):
     matches = []
 
     # Debug-Datei schreiben
+    print("HTML wird gespeichert")
     with open("debug_fussball.html", "w", encoding="utf-8") as f:
         f.write(response.text)
-
+    print("HTML gespeichert")
+    
     # Alle Tabellen untersuchen
     rows = soup.find_all("tr")
 
