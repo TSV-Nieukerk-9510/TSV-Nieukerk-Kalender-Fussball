@@ -14,8 +14,6 @@ HEADERS = {
 }
 
 
-
-        
 def fetch_match_location(match_url):
 
     if not match_url:
@@ -102,17 +100,52 @@ def fetch_match_location(match_url):
         if location:
 
             location = re.sub(
+                r"[^\w\s,./()-]",
+                "",
+                location,
+                flags=re.UNICODE
+            )
+
+            location = re.sub(
                 r"\s+",
                 " ",
                 location
             )
 
-            location = (
-                location.replace(
-                    " ,",
-                    ","
-                )
-                .strip()
+            location = re.sub(
+                r"\s*,\s*",
+                ", ",
+                location
+            )
+
+            location = location.strip(
+                " ,"
+            )
+
+            location = location.replace(
+                "Platzart",
+                ""
+            )
+
+            location = location.replace(
+                "Magazin",
+                ""
+            )
+
+            location = re.sub(
+                r"\d{2}\.\d{2}\.\d{4}",
+                "",
+                location
+            )
+
+            location = re.sub(
+                r"\s+",
+                " ",
+                location
+            ).strip()
+
+            location = location.strip(
+                " ,"
             )
 
         return location, pitch
@@ -128,10 +161,11 @@ def fetch_match_location(match_url):
 
         return "", ""
 
+
 def fetch_team_matches(team_id):
 
     matchplan_url = (
-        f"https://www.fussball.de/ajax.team.matchplan/"
+        "https://www.fussball.de/ajax.team.matchplan/"
         f"-/mode/PAGE/team-id/{team_id}"
     )
 
@@ -209,67 +243,4 @@ def fetch_team_matches(team_id):
             continue
 
         home_team = clubs[0].get_text(
-            strip=True
-        )
-
-        away_team = clubs[1].get_text(
-            strip=True
-        )
-
-        competition = ""
-
-        competition_cell = competition_row.select_one(
-            ".column-team"
-        )
-
-        if competition_cell:
-
-            competition = (
-                competition_cell
-                .get_text(strip=True)
-            )
-
-        match_link = ""
-
-        score_link = game_row.select_one(
-            ".column-score a"
-        )
-
-        if score_link:
-
-            match_link = score_link.get(
-                "href",
-                ""
-            )
-
-        location = ""
-        pitch = ""
-
-        if match_link:
-
-            location, pitch = (
-                fetch_match_location(
-                    match_link
-                )
-            )
-
-        matches.append({
-            "home": home_team,
-            "away": away_team,
-            "date": date_iso,
-            "time": (
-                time_match.group(1)
-                if time_match
-                else "00:00"
-            ),
-            "competition": competition,
-            "location": location,
-            "pitch": pitch,
-            "match_url": match_link
-        })
-
-    print(
-        f"Insgesamt {len(matches)} Spiele gefunden"
-    )
-
-    return matches
+            strip
