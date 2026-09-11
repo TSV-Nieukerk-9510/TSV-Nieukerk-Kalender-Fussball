@@ -17,6 +17,7 @@ def is_valid_date(date_str):
 
 
 def create_calendar(team_name, matches):
+
     print(f"\nErzeuge Kalender für {team_name}")
 
     cal = Calendar()
@@ -34,9 +35,12 @@ def create_calendar(team_name, matches):
             continue
 
         try:
+
             event = Event()
 
-            event.name = f"{m['home']} vs {m['away']}"
+            event.name = (
+                f"{m['home']} vs {m['away']}"
+            )
 
             dt = datetime.strptime(
                 f"{m['date']} {m['time']}",
@@ -48,16 +52,39 @@ def create_calendar(team_name, matches):
             location = m.get("location", "")
 
             if m.get("pitch"):
-                location = f"{location} ({m['pitch']})"
+                location = (
+                    f"{location} ({m['pitch']})"
+                )
 
-            event.location = location
+            if location:
+                event.location = location
+
+            description_parts = []
+
+            if m.get("competition"):
+                description_parts.append(
+                    f"Wettbewerb: {m['competition']}"
+                )
+
+            if m.get("url"):
+                description_parts.append(
+                    f"Spieldetails: {m['url']}"
+                )
+
+            if description_parts:
+                event.description = "\n".join(
+                    description_parts
+                )
 
             cal.events.add(event)
 
             added_events += 1
 
         except Exception as e:
-            print("Fehler beim Erzeugen des Events:")
+
+            print(
+                "Fehler beim Erzeugen des Events:"
+            )
             print(e)
 
     os.makedirs("kalender", exist_ok=True)
@@ -82,7 +109,10 @@ def main():
 
     teams = {
         "TSV Nieukerk":
-        "https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI9ICMK000000VTVG0001VTR8C1K7#!/"
+        "https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI9ICMK000000VTVG0001VTR8C1K7#!/",
+
+        "TSV Nieukerk Senioren":
+        "https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIDHQJ0000000VTVG0001VTR8C1K7#!/"
     }
 
     print(f"Gefundene Teams: {len(teams)}")
@@ -98,7 +128,9 @@ def main():
 
             print("Rufe fetch_team_matches auf...")
 
-            matches = fetch_team_matches(team_url)
+            matches = fetch_team_matches(
+                team_url
+            )
 
             print(
                 f"fetch_team_matches liefert "
@@ -113,15 +145,16 @@ def main():
             for m in matches[:10]:
                 print(m)
 
-            create_calendar(team_name, matches)
+            create_calendar(
+                team_name,
+                matches
+            )
 
         except Exception as e:
 
-            print("FEHLER BEI TEAM:")
+            print("\nFEHLER BEI TEAM:")
             print(team_name)
             print(str(e))
-
-            raise
 
     print("\nFertig.")
 
