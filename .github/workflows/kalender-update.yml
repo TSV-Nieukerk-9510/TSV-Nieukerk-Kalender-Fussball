@@ -21,25 +21,26 @@ jobs:
       - name: Abhängigkeiten installieren
         run: |
           pip install ics beautifulsoup4 lxml requests qrcode[pil]
+          
       - name: Mannschaften ermitteln
         run: |
           export PYTHONPATH="$PYTHONPATH:$GITHUB_WORKSPACE"
-          python -u scripts/discover_teams.py    
+          python -u scripts/discover_teams.py  
           
-      - name: README erzeugen
+      - name: Kalender generieren
         run: |
           export PYTHONPATH="$PYTHONPATH:$GITHUB_WORKSPACE"
-          python -u scripts/generate_readme.py    
+          python -u scripts/generate_calendars.py     
           
       - name: QR-Codes erzeugen
         run: |
           export PYTHONPATH="$PYTHONPATH:$GITHUB_WORKSPACE"
           python -u scripts/generate_qr_codes.py
           
-      - name: Kalender generieren
+      - name: README erzeugen
         run: |
           export PYTHONPATH="$PYTHONPATH:$GITHUB_WORKSPACE"
-          python -u scripts/generate_calendars.py
+          python -u scripts/generate_readme.py    
 
       - name: Pull Request erstellen
         id: cpr
