@@ -1,5 +1,5 @@
 from ics import Calendar, Event
-from fetch_matches import fetch_team_matches
+from scripts.fetch_matches import fetch_team_matches
 import os
 
 TEAM_URLS = {
