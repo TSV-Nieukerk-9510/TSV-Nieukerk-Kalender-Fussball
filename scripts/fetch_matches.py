@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from .utils import clean_text, detect_pitch
+from scripts.utils import clean_text, detect_pitch
 
 def fetch_team_matches(team_url):
     response = requests.get(team_url)
