@@ -14,6 +14,8 @@ HEADERS = {
 }
 
 
+
+        
 def fetch_match_location(match_url):
 
     if not match_url:
@@ -35,33 +37,55 @@ def fetch_match_location(match_url):
         )
 
         text = soup.get_text(
-            " ",
+            "\n",
             strip=True
         )
 
         location = ""
         pitch = ""
 
-        patterns = [
-            r"Sportanlage\s+([^|]+)",
-            r"Spielort\s+([^|]+)",
-            r"Austragungsort\s+([^|]+)"
+        lines = [
+            line.strip()
+            for line in text.split("\n")
+            if line.strip()
         ]
 
-        for pattern in patterns:
+        keywords = [
+            "Sportanlage",
+            "Spielort",
+            "Austragungsort"
+        ]
 
-            match = re.search(
-                pattern,
-                text,
-                re.IGNORECASE
-            )
+        for i, line in enumerate(lines):
 
-            if match:
+            if any(
+                keyword.lower()
+                in line.lower()
+                for keyword in keywords
+            ):
 
-                location = (
-                    match.group(1)
-                    .strip()
-                    .replace("\n", " ")
+                collected = []
+
+                for candidate in lines[i + 1:i + 5]:
+
+                    if any(
+                        stop in candidate.lower()
+                        for stop in [
+                            "schiedsrichter",
+                            "spielberichte",
+                            "zuschauer",
+                            "staffel-id",
+                            "spiel:"
+                        ]
+                    ):
+                        break
+
+                    collected.append(
+                        candidate
+                    )
+
+                location = ", ".join(
+                    collected
                 )
 
                 break
@@ -75,6 +99,22 @@ def fetch_match_location(match_url):
         elif "Rasenplatz" in text:
             pitch = "Rasenplatz"
 
+        if location:
+
+            location = re.sub(
+                r"\s+",
+                " ",
+                location
+            )
+
+            location = (
+                location.replace(
+                    " ,",
+                    ","
+                )
+                .strip()
+            )
+
         return location, pitch
 
     except Exception as e:
@@ -87,7 +127,7 @@ def fetch_match_location(match_url):
         print(e)
 
         return "", ""
-
+``
 
 def fetch_team_matches(team_id):
 
