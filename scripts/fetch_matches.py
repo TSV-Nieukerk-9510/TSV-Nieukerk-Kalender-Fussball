@@ -241,6 +241,24 @@ def fetch_team_matches(team_id):
 
         if len(clubs) < 2:
             continue
-
+        
         home_team = clubs[0].get_text(
-            strip
+            strip=True
+        )
+        
+        away_team = clubs[1].get_text(
+            strip=True
+        )
+        
+        competition = ""
+        
+        competition_cell = competition_row.select_one(
+            ".column-team"
+        )
+        
+        if competition_cell:
+        
+            competition = (
+                competition_cell
+                .get_text(strip=True)
+            )
