@@ -4,7 +4,8 @@ from datetime import datetime
 from ics import Calendar, Event
 
 from scripts.fetch_matches import fetch_team_matches
-
+from zoneinfo import ZoneInfo
+import re
 
 def load_teams():
 
@@ -182,9 +183,15 @@ def create_event(team, match, mode):
 
     event.name = title
 
+
+
     dt = datetime.strptime(
         f"{match['date']} {match['time']}",
         "%Y-%m-%d %H:%M"
+    )
+
+    dt = dt.replace(
+        tzinfo=ZoneInfo("Europe/Berlin")
     )
 
     event.begin = dt
@@ -273,6 +280,35 @@ def write_calendar(
     ) as f:
 
         f.writelines(calendar)
+
+    with open(
+        f"kalender/{filename}",
+        "r",
+        encoding="utf-8"
+    ) as f:
+
+        content = f.read()
+
+
+        content = content.replace(
+            "Z\r\n",
+            "\r\n"
+        )
+
+        content = content.replace(
+            "Z\n",
+            "\n"
+        )
+
+        #print(content[:2000])   
+
+    with open(
+        f"kalender/{filename}",
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        f.write(content)
 
     print(
         f"{filename}: "
