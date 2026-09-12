@@ -5,7 +5,7 @@ from datetime import datetime
 from ics import Calendar, Event
 
 from scripts.fetch_matches import fetch_team_matches
-
+from zoneinfo import ZoneInfo
 
 print("### SCRIPT STARTET ###")
 
@@ -84,8 +84,16 @@ def create_calendar(team, matches):
                 "%Y-%m-%d %H:%M"
             )
 
+            dt = dt.replace(
+                tzinfo=ZoneInfo("Europe/Berlin")
+            )
+
+            print(dt)
+
             event.begin = dt
 
+            print(event.begin)
+                
             event.uid = (
                 f"{team['team_id']}-"
                 f"{m['date']}-"
