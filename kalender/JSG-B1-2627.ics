@@ -2,13 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nSaison: 2627\nWettbewerb: Kreisliga A\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/sv-1926-rindern-jsg-nieukerk-aldekerk/-/spiel/031SBMNT78000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-nieukerk-aldekerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI97ATG000000VTVG0001VTR8C1K7
-LOCATION:Kunstrasen
-DTSTART:20261121T160000Z
-SUMMARY:SV 1926 Rindern vs JSG Nieukerk /​ Aldekerk
-UID:011MI97ATG000000VTVG0001VTR8C1K7-2026-11-21-16:00-SV_1926_Rindern-JSG_Nieukerk_/​_Aldekerk
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nSaison: 2627\nWettbewerb: Kreisliga A\nSpielort: JSG Nieukerk / Aldekerk\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-tsv-weeze-10-19/-/spiel/031SBMNV8G000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-nieukerk-aldekerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI97ATG000000VTVG0001VTR8C1K7
 LOCATION:JSG Nieukerk / Aldekerk (Rasenplatz)
 DTSTART:20260920T110000Z
@@ -44,8 +37,8 @@ SUMMARY:JSG Nieukerk /​ Aldekerk vs SV 1913 Walbeck
 UID:011MI97ATG000000VTVG0001VTR8C1K7-2026-10-04-11:00-JSG_Nieukerk_/​_Aldekerk-SV_1913_Walbeck
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nSaison: 2627\nWettbewerb: Kreisliga A\nSpielort: JSG Uedem / Keppeln / Louisendorf\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/jsg-uedem-keppeln-louisendorf-jsg-nieukerk-aldekerk/-/spiel/031SBMNVA0000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-nieukerk-aldekerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI97ATG000000VTVG0001VTR8C1K7
-LOCATION:JSG Uedem / Keppeln / Louisendorf (Rasenplatz)
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nSaison: 2627\nWettbewerb: Kreisliga A\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/jsg-uedem-keppeln-louisendorf-jsg-nieukerk-aldekerk/-/spiel/031SBMNVA0000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-nieukerk-aldekerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI97ATG000000VTVG0001VTR8C1K7
+LOCATION:Kunstrasen
 DTSTART:20260913T110000Z
 SUMMARY:JSG Uedem /​ Keppeln /​ Louisendorf vs JSG Nieukerk /​ Aldekerk
 UID:011MI97ATG000000VTVG0001VTR8C1K7-2026-09-13-11:00-JSG_Uedem_/​_Keppeln_/​_Louisendorf-JSG_Nieukerk_/​_Aldekerk
@@ -70,5 +63,12 @@ LOCATION:SV 1934 Veert (Kunstrasen)
 DTSTART:20260927T110000Z
 SUMMARY:SV 1934 Veert vs JSG Nieukerk /​ Aldekerk
 UID:011MI97ATG000000VTVG0001VTR8C1K7-2026-09-27-11:00-SV_1934_Veert-JSG_Nieukerk_/​_Aldekerk
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nSaison: 2627\nWettbewerb: Kreispokal\nSpielort: JSG Nieukerk / Aldekerk\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-jsg-issum-sevelen/-/spiel/0322L5RU9C000000VS5489BTVT7QHFUC\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-nieukerk-aldekerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI97ATG000000VTVG0001VTR8C1K7
+LOCATION:JSG Nieukerk / Aldekerk (Rasenplatz)
+DTSTART:20260923T190000Z
+SUMMARY:JSG Nieukerk /​ Aldekerk vs JSG Issum /​ Sevelen
+UID:011MI97ATG000000VTVG0001VTR8C1K7-2026-09-23-19:00-JSG_Nieukerk_/​_Aldekerk-JSG_Issum_/​_Sevelen
 END:VEVENT
 END:VCALENDAR
