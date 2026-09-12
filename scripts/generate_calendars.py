@@ -6,6 +6,7 @@ from ics import Calendar, Event
 
 from scripts.fetch_matches import fetch_team_matches
 from zoneinfo import ZoneInfo
+import re
 
 print("### SCRIPT STARTET ###")
 
@@ -90,8 +91,8 @@ def create_calendar(team, matches):
 
             print(dt)
 
-            event.begin = dt
-
+            # event.begin = dt
+            event.begin = f"{m['date']} {m['time']}"
             print(event.begin)
                 
             event.uid = (
@@ -195,7 +196,62 @@ def create_calendar(team, matches):
     ) as f:
 
         f.writelines(cal)
+    with open(
+            filename,
+            "r",
+            encoding="utf-8"
+        ) as f:
 
+        content = f.read()
+
+    for m in matches:
+
+        local_dt = datetime.strptime(
+            f"{m['date']} {m['time']}",
+            "%Y-%m-%d %H:%M"
+        )
+
+        berlin_dt = local_dt.replace(
+            tzinfo=ZoneInfo("Europe/Berlin")
+        )
+
+        utc_dt = berlin_dt.astimezone(
+            ZoneInfo("UTC")
+        )
+
+        old_value = utc_dt.strftime(
+            "DTSTART:%Y%m%dT%H%M%SZ"
+        )
+
+        new_value = local_dt.strftime(
+            "DTSTART:%Y%m%dT%H%M%S"
+        )
+
+        content = content.replace(
+            "Z\r\n",
+            "\r\n"
+        )
+
+        content = content.replace(
+            old_value,
+            new_value
+        )
+
+        import re
+
+        content = re.sub(
+            r"(DTSTART:\d{8}T\d{6})Z",
+            r"\1",
+            content
+        )
+
+    with open(
+        filename,
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        f.write(content)
     print(
         f"Datei geschrieben: "
         f"{filename}"
