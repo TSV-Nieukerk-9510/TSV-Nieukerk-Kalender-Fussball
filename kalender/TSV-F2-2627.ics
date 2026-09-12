@@ -2,6 +2,12 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
+DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk II\nSaison: 2627\nWettbewerb: Kinderfußball\nSpielseite: https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/031K8VI7RK000001VS5489BUVVKNMR0J-G\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-ii-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIF8R08000000VTVG0001VTR8C1K7
+DTSTART:20260919T094500Z
+SUMMARY:SV 19 Sevelen II - Kinderfestival vs TSV Nieukerk II
+UID:011MIF8R08000000VTVG0001VTR8C1K7-2026-09-19-09:45-SV_19_Sevelen_II_-_Kinderfestival-TSV_Nieukerk_II
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk II\nSaison: 2627\nWettbewerb: Kinderfußball\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/031K8VI7RK000005VS5489BUVVKNMR0J-G\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-ii-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIF8R08000000VTVG0001VTR8C1K7
 LOCATION:Kunstrasen
 DTSTART:20260926T094500Z
@@ -13,12 +19,6 @@ DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk II\nSaison: 2627\nWettbewerb: 
 DTSTART:20261010T094500Z
 SUMMARY:Kinderfestival vs TSV Nieukerk II
 UID:011MIF8R08000000VTVG0001VTR8C1K7-2026-10-10-09:45-Kinderfestival-TSV_Nieukerk_II
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk II\nSaison: 2627\nWettbewerb: Kinderfußball\nSpielseite: https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/031K8VI7RK000001VS5489BUVVKNMR0J-G\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-ii-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIF8R08000000VTVG0001VTR8C1K7
-DTSTART:20260919T094500Z
-SUMMARY:Kinderfestival vs TSV Nieukerk II
-UID:011MIF8R08000000VTVG0001VTR8C1K7-2026-09-19-09:45-Kinderfestival-TSV_Nieukerk_II
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk II\nSaison: 2627\nWettbewerb: Kinderfußball\nSpielort: Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/031PJ57B90000002VS5489BTVT8K11BC-G\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-ii-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIF8R08000000VTVG0001VTR8C1K7
