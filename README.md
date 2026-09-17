@@ -168,6 +168,24 @@ https://raw.githubusercontent.com/TSV-Nieukerk-9510/TSV-Nieukerk-Kalender-Fussba
 
 ---
 
+## F-Junioren - TSV Nieukerk II
+
+**Kalenderdatei:** `TSV-F2-2627.ics`
+
+📅 **Kalender abonnieren:**
+
+https://raw.githubusercontent.com/TSV-Nieukerk-9510/TSV-Nieukerk-Kalender-Fussball/main/kalender/TSV-F2-2627.ics
+
+⚽ **Mannschaftsseite:**
+
+https://www.fussball.de/mannschaft/tsv-nieukerk-ii-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIF8R08000000VTVG0001VTR8C1K7
+
+📱 **QR-Code:**
+
+https://raw.githubusercontent.com/TSV-Nieukerk-9510/TSV-Nieukerk-Kalender-Fussball/main/qr/TSV-F2-2627.png
+
+---
+
 ## G-Junioren - TSV Nieukerk
 
 **Kalenderdatei:** `TSV-G1-2627.ics`
