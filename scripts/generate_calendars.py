@@ -227,23 +227,23 @@ def create_calendar(team, matches):
             "DTSTART:%Y%m%dT%H%M%S"
         )
 
-        content = content.replace(
-            "Z\r\n",
-            "\r\n"
-        )
+        #content = content.replace(
+        #    "Z\r\n",
+        #    "\r\n"
+        #)
 
-        content = content.replace(
-            old_value,
-            new_value
-        )
+        #content = content.replace(
+        #    old_value,
+        #    new_value
+        #)
 
-        import re
+        #import re
 
-        content = re.sub(
-            r"(DTSTART:\d{8}T\d{6})Z",
-            r"\1",
-            content
-        )
+        #content = re.sub(
+        #    r"(DTSTART:\d{8}T\d{6})Z",
+        #    r"\1",
+        #    content
+        #)
 
     with open(
         filename,

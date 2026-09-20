@@ -195,6 +195,8 @@ def create_event(team, match, mode):
     )
 
     event.begin = dt
+    print("dt:", dt)
+    print("event.begin:", event.begin)
 
     description = []
 
@@ -290,16 +292,8 @@ def write_calendar(
         content = f.read()
 
 
-        content = content.replace(
-            "Z\r\n",
-            "\r\n"
-        )
-
-        content = content.replace(
-            "Z\n",
-            "\n"
-        )
-
+        
+        
         #print(content[:2000])   
 
     with open(
