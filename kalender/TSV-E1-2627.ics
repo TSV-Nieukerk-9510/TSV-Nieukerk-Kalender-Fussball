@@ -2,13 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk\nSaison: 2627\nWettbewerb: Kinderfußball\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/031TRQLTRS00000DVS5489BTVT7QHFUC-G\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI9ICMK000000VTVG0001VTR8C1K7
-LOCATION:Rasenplatz
-DTSTART:20260926T111500Z
-SUMMARY:SV Viktoria Goch - Kinderfestival vs TSV Nieukerk
-UID:011MI9ICMK000000VTVG0001VTR8C1K7-2026-09-26-11:15-SV_Viktoria_Goch_-_Kinderfestival-TSV_Nieukerk
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk\nSaison: 2627\nWettbewerb: Kinderfußball\nSpielort: Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/031TRQLTRS00000KVS5489BTVT7QHFUC-G\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI9ICMK000000VTVG0001VTR8C1K7
 LOCATION:Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz (Rasenplatz)
 DTSTART:20261003T111500Z
@@ -23,10 +16,10 @@ SUMMARY:SV Straelen - Kinderfestival vs TSV Nieukerk
 UID:011MI9ICMK000000VTVG0001VTR8C1K7-2026-10-10-11:15-SV_Straelen_-_Kinderfestival-TSV_Nieukerk
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk\nSaison: 2627\nWettbewerb: Kinderfußball\nSpielort: Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/031TRQLTRS000003VS5489BTVT7QHFUC-G\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI9ICMK000000VTVG0001VTR8C1K7
-LOCATION:Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz (Rasenplatz)
-DTSTART:20260922T170000Z
-SUMMARY:TSV Nieukerk - Kinderfestival vs TSV Nieukerk
-UID:011MI9ICMK000000VTVG0001VTR8C1K7-2026-09-22-17:00-TSV_Nieukerk_-_Kinderfestival-TSV_Nieukerk
+DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk\nSaison: 2627\nWettbewerb: Kinderfußball\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/031TRQLTRS00000DVS5489BTVT7QHFUC-G\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI9ICMK000000VTVG0001VTR8C1K7
+LOCATION:Rasenplatz
+DTSTART:20260926T111500Z
+SUMMARY:SV Viktoria Goch - Kinderfestival vs TSV Nieukerk
+UID:011MI9ICMK000000VTVG0001VTR8C1K7-2026-09-26-11:15-SV_Viktoria_Goch_-_Kinderfestival-TSV_Nieukerk
 END:VEVENT
 END:VCALENDAR
