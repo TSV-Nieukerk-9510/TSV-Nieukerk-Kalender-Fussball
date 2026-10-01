@@ -2,13 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nSaison: 2627\nWettbewerb: Kreisliga A\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/tsv-nieukerk-uedemer-sv/-/spiel/031JH22170000000VS5489BUVVKNMR0J\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIE0NA8000000VTVG0001VTR8C1K7
-LOCATION:Kunstrasen
-DTSTART:20261108T153000Z
-SUMMARY:TSV Nieukerk vs Uedemer SV
-UID:011MIE0NA8000000VTVG0001VTR8C1K7-2026-11-08-15:30-TSV_Nieukerk-Uedemer_SV
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nSaison: 2627\nWettbewerb: Kreisliga A\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/tsv-nieukerk-sv-walbeck/-/spiel/031JH22060000000VS5489BUVVKNMR0J\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIE0NA8000000VTVG0001VTR8C1K7
 LOCATION:Kunstrasen
 DTSTART:20261206T153000Z
@@ -21,6 +14,13 @@ LOCATION:BV Sturm Wissel (Rasenplatz)
 DTSTART:20261129T143000Z
 SUMMARY:BV Sturm Wissel vs TSV Nieukerk
 UID:011MIE0NA8000000VTVG0001VTR8C1K7-2026-11-29-14:30-BV_Sturm_Wissel-TSV_Nieukerk
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nSaison: 2627\nWettbewerb: Kreisliga A\nSpielort: SF Broekhuysen II\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/sf-broekhuysen-ii-tsv-nieukerk/-/spiel/031JH22G8G000000VS5489BUVVKNMR0J\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIE0NA8000000VTVG0001VTR8C1K7
+LOCATION:SF Broekhuysen II (Rasenplatz)
+DTSTART:20270228T130000Z
+SUMMARY:SF Broekhuysen II vs TSV Nieukerk
+UID:011MIE0NA8000000VTVG0001VTR8C1K7-2027-02-28-13:00-SF_Broekhuysen_II-TSV_Nieukerk
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nSaison: 2627\nWettbewerb: Kreisliga A\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/tsv-nieukerk-sv-viktoria-goch-ii/-/spiel/031JH22HN0000000VS5489BUVVKNMR0J\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIE0NA8000000VTVG0001VTR8C1K7
@@ -44,13 +44,6 @@ SUMMARY:TSV Nieukerk vs SV Grün-Weiß Vernum
 UID:011MIE0NA8000000VTVG0001VTR8C1K7-2026-10-18-15:30-TSV_Nieukerk-SV_Grün-Weiß_Vernum
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nSaison: 2627\nWettbewerb: Kreispokal\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/tsv-nieukerk-tsv-wachtendonk-wankum/-/spiel/031T94EVVK000000VS5489BUVSORQI22\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIE0NA8000000VTVG0001VTR8C1K7
-LOCATION:Kunstrasen
-DTSTART:20260930T193000Z
-SUMMARY:TSV Nieukerk vs TSV Wachtendonk-Wankum
-UID:011MIE0NA8000000VTVG0001VTR8C1K7-2026-09-30-19:30-TSV_Nieukerk-TSV_Wachtendonk-Wankum
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nSaison: 2627\nWettbewerb: Kreisliga A\nSpielort: SV 1934 Veert\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/sv-1934-veert-tsv-nieukerk/-/spiel/031JH220TO000000VS5489BUVVKNMR0J\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIE0NA8000000VTVG0001VTR8C1K7
 LOCATION:SV 1934 Veert (Kunstrasen)
 DTSTART:20261115T153000Z
@@ -70,5 +63,12 @@ LOCATION:Kunstrasen
 DTSTART:20261011T153000Z
 SUMMARY:TSV Wachtendonk-Wankum vs TSV Nieukerk
 UID:011MIE0NA8000000VTVG0001VTR8C1K7-2026-10-11-15:30-TSV_Wachtendonk-Wankum-TSV_Nieukerk
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nSaison: 2627\nWettbewerb: Kreisliga A\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/tsv-nieukerk-uedemer-sv/-/spiel/031JH22170000000VS5489BUVVKNMR0J\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIE0NA8000000VTVG0001VTR8C1K7
+LOCATION:Kunstrasen
+DTSTART:20261108T153000Z
+SUMMARY:TSV Nieukerk vs Uedemer SV
+UID:011MIE0NA8000000VTVG0001VTR8C1K7-2026-11-08-15:30-TSV_Nieukerk-Uedemer_SV
 END:VEVENT
 END:VCALENDAR
