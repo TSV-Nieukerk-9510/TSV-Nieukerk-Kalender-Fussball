@@ -2,11 +2,11 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nSaison: 2627\nWettbewerb: Kreisliga B\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/tsv-nieukerk-ii-sv-19-sevelen-ii/-/spiel/031JH9A068000000VS5489BUVVKNMR0J\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-ii-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIDJU5C000000VTVG0001VTR8C1K7
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nSaison: 2627\nWettbewerb: Kreisliga B\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/djk-twisteden-ii-tsv-nieukerk-ii/-/spiel/031JH99TUC000000VS5489BUVVKNMR0J\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-ii-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIDJU5C000000VTVG0001VTR8C1K7
 LOCATION:Kunstrasen
-DTSTART:20261004T130000Z
-SUMMARY:TSV Nieukerk II vs SV 19 Sevelen II
-UID:011MIDJU5C000000VTVG0001VTR8C1K7-2026-10-04-13:00-TSV_Nieukerk_II-SV_19_Sevelen_II
+DTSTART:20261115T130000Z
+SUMMARY:DJK Twisteden II vs TSV Nieukerk II
+UID:011MIDJU5C000000VTVG0001VTR8C1K7-2026-11-15-13:00-DJK_Twisteden_II-TSV_Nieukerk_II
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nSaison: 2627\nWettbewerb: Kreisliga B\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/tsv-nieukerk-ii-sv-gruen-weiss-vernum-ii/-/spiel/031JH99V9G000000VS5489BUVVKNMR0J\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-ii-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIDJU5C000000VTVG0001VTR8C1K7
@@ -14,13 +14,6 @@ LOCATION:Kunstrasen
 DTSTART:20261018T130000Z
 SUMMARY:TSV Nieukerk II vs SV Grün-Weiß Vernum II
 UID:011MIDJU5C000000VTVG0001VTR8C1K7-2026-10-18-13:00-TSV_Nieukerk_II-SV_Grün-Weiß_Vernum_II
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nSaison: 2627\nWettbewerb: Kreisliga B\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/djk-twisteden-ii-tsv-nieukerk-ii/-/spiel/031JH99TUC000000VS5489BUVVKNMR0J\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-ii-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIDJU5C000000VTVG0001VTR8C1K7
-LOCATION:Kunstrasen
-DTSTART:20261115T130000Z
-SUMMARY:DJK Twisteden II vs TSV Nieukerk II
-UID:011MIDJU5C000000VTVG0001VTR8C1K7-2026-11-15-13:00-DJK_Twisteden_II-TSV_Nieukerk_II
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nSaison: 2627\nWettbewerb: Kreisliga B\nSpielort: SV Arminia Kapellen-Hamb\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/sv-arminia-kapellen-hamb-tsv-nieukerk-ii/-/spiel/031JH9AETK000000VS5489BUVVKNMR0J\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-ii-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIDJU5C000000VTVG0001VTR8C1K7
@@ -49,6 +42,13 @@ LOCATION:Kunstrasen
 DTSTART:20261108T130000Z
 SUMMARY:TSV Nieukerk II vs SV BW Herongen II
 UID:011MIDJU5C000000VTVG0001VTR8C1K7-2026-11-08-13:00-TSV_Nieukerk_II-SV_BW_Herongen_II
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nSaison: 2627\nWettbewerb: Kreisliga B\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/tsv-nieukerk-ii-sv-germania-wemb/-/spiel/031JH9AEG8000000VS5489BUVVKNMR0J\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-ii-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIDJU5C000000VTVG0001VTR8C1K7
+LOCATION:Kunstrasen
+DTSTART:20270307T130000Z
+SUMMARY:TSV Nieukerk II vs SV Germania Wemb
+UID:011MIDJU5C000000VTVG0001VTR8C1K7-2027-03-07-13:00-TSV_Nieukerk_II-SV_Germania_Wemb
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nSaison: 2627\nWettbewerb: Kreisliga B\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/fc-aldekerk-1928-52-ii-tsv-nieukerk-ii/-/spiel/031JH99TI8000000VS5489BUVVKNMR0J\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-ii-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIDJU5C000000VTVG0001VTR8C1K7
