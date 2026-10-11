@@ -6,13 +6,13 @@ Die Kalender können in Outlook, Apple Kalender, Google Kalender oder anderen Ka
 
 ---
 
-## A-Junioren - JSG Aldekerk / Nieukerk
+## A-Junioren - JSG FC Aldekerk / TSV Nieukerk
 
-**Kalenderdatei:** `JSG-A1-2627.ics`
+**Kalenderdatei:** `A-Junioren-JSG-FC-Aldekerk-TSV-Nieukerk-2627.ics`
 
 📅 **Kalender abonnieren:**
 
-https://raw.githubusercontent.com/TSV-Nieukerk-9510/TSV-Nieukerk-Kalender-Fussball/main/kalender/JSG-A1-2627.ics
+https://raw.githubusercontent.com/TSV-Nieukerk-9510/TSV-Nieukerk-Kalender-Fussball/main/kalender/A-Junioren-JSG-FC-Aldekerk-TSV-Nieukerk-2627.ics
 
 ⚽ **Mannschaftsseite:**
 
@@ -20,7 +20,7 @@ https://www.fussball.de/mannschaft/jsg-aldekerk-nieukerk-fc-aldekerk-28-52-niede
 
 📱 **QR-Code:**
 
-https://raw.githubusercontent.com/TSV-Nieukerk-9510/TSV-Nieukerk-Kalender-Fussball/main/qr/JSG-A1-2627.png
+https://raw.githubusercontent.com/TSV-Nieukerk-9510/TSV-Nieukerk-Kalender-Fussball/main/qr/A-Junioren-JSG-FC-Aldekerk-TSV-Nieukerk-2627.png
 
 ---
 
