@@ -2,128 +2,128 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nHeimspiel: Ja\nGegner: FC Aldekerk 1928/​52 III\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
-DTSTART:20261206T120000Z
-SUMMARY:H - H2 - FC Aldekerk 1928/​52 III
-UID:c69b0977-1e66-493f-880a-87c095b69d46@c69b.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nHeimspiel: Nein\nGegner: DJK Twisteden II\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
-DTSTART:20261115T120000Z
-SUMMARY:A - H2 - DJK Twisteden II
-UID:89c2a789-8fe6-4171-b249-e27602b344cc@89c2.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nHeimspiel: Ja\nGegner: SV 1913 Walbeck II\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
-DTSTART:20261213T120000Z
-SUMMARY:H - H2 - SV 1913 Walbeck II
-UID:79b0289d-7223-4559-aee1-85d2e214cf1a@79b0.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nHeimspiel: Ja\nGegner: Uedemer SV\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
-DTSTART:20261108T143000Z
-SUMMARY:H - H1 - Uedemer SV
-UID:b00cec8c-4856-4ca6-aca4-2bf1a90404b6@b00c.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nHeimspiel: Nein\nGegner: SF Broekhuysen II\nWettbewerb: Kreisliga A\nSpielort: SF Broekhuysen II\nPlatztyp: Naturrasen
-LOCATION:SF Broekhuysen II
-DTSTART:20270228T140000Z
-SUMMARY:A - H1 - SF Broekhuysen II
-UID:ffdd3be0-83c0-41d2-a3c9-3834e96311c5@ffdd.org
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nHeimspiel: Nein\nGegner: SV Arminia Kapellen-Hamb\nWettbewerb: Kreisliga B\nSpielort: SV Arminia Kapellen-Hamb\nPlatztyp: Naturrasen
+LOCATION:SV Arminia Kapellen-Hamb
+DTSTART:20270226T190000Z
+SUMMARY:A - H2 - SV Arminia Kapellen-Hamb
+UID:8511ce25-a635-468d-9ece-e9eab5343d37@8511.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nHeimspiel: Nein\nGegner: SV Straelen\nWettbewerb: Kreisliga A\nPlatztyp: Naturrasen
 DTSTART:20261025T140000Z
 SUMMARY:A - H1 - SV Straelen
-UID:b2d1b3ec-bfbb-40dd-83a3-9581077cbbaf@b2d1.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nHeimspiel: Ja\nGegner: 1. FC Kleve 63/​03 II\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
-DTSTART:20270307T143000Z
-SUMMARY:H - H1 - 1. FC Kleve 63/​03 II
-UID:ff5f8c40-114e-4ee0-b57b-0bf23fb34d95@ff5f.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nHeimspiel: Ja\nGegner: SV Viktoria Goch II\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
-DTSTART:20261213T143000Z
-SUMMARY:H - H1 - SV Viktoria Goch II
-UID:bf7091df-fe71-48e1-8a2b-9b3f987bde5d@bf70.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nHeimspiel: Ja\nGegner: SV Germania Wemb\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
-DTSTART:20270307T120000Z
-SUMMARY:H - H2 - SV Germania Wemb
-UID:00950b22-a0ca-45d7-9791-77cef6bc976a@0095.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nHeimspiel: Nein\nGegner: SC Blau-Weiß Auwel-Holt\nWettbewerb: Kreisliga B\nSpielort: SC Blau-Weiß Auwel-Holt\nPlatztyp: Kunstrasen
-LOCATION:SC Blau-Weiß Auwel-Holt
-DTSTART:20261025T140000Z
-SUMMARY:A - H2 - SC Blau-Weiß Auwel-Holt
-UID:80d6f42b-0250-45f1-aa40-07503dad671f@80d6.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nHeimspiel: Ja\nGegner: SV BW Herongen II\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
-DTSTART:20261108T120000Z
-SUMMARY:H - H2 - SV BW Herongen II
-UID:c48e0115-96b2-4b7d-b733-a15ffb3635e1@c48e.org
+UID:9f3c398c-ede7-45f6-9c15-f8dd602451ce@9f3c.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nHeimspiel: Nein\nGegner: SV 1934 Veert\nWettbewerb: Kreisliga A\nSpielort: SV 1934 Veert\nPlatztyp: Kunstrasen
 LOCATION:SV 1934 Veert
 DTSTART:20261115T143000Z
 SUMMARY:A - H1 - SV 1934 Veert
-UID:0388dabc-125d-46e7-b03c-17b0fbd779b9@0388.org
+UID:cf7b172d-a73d-488c-ab9d-06d787735387@cf7b.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nHeimspiel: Nein\nGegner: Viktoria Winnekendonk\nWettbewerb: Kreisliga A\nPlatztyp: Naturrasen
-DTSTART:20270314T140000Z
-SUMMARY:A - H1 - Viktoria Winnekendonk
-UID:e9a2fe2b-6438-412f-b717-1bf8ef9b9d85@e9a2.org
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nHeimspiel: Ja\nGegner: FC Aldekerk 1928/​52 III\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
+DTSTART:20261206T120000Z
+SUMMARY:H - H2 - FC Aldekerk 1928/​52 III
+UID:e2157ce7-d12f-4f5c-a785-ad063248aa8b@e215.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nHeimspiel: Nein\nGegner: FC Aldekerk 1928/​52 II\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
-DTSTART:20261129T140000Z
-SUMMARY:A - H2 - FC Aldekerk 1928/​52 II
-UID:ffb0862e-8c27-4093-9a31-bcab436a07a5@ffb0.org
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nHeimspiel: Nein\nGegner: SF Broekhuysen II\nWettbewerb: Kreisliga A\nSpielort: SF Broekhuysen II\nPlatztyp: Naturrasen
+LOCATION:SF Broekhuysen II
+DTSTART:20270228T140000Z
+SUMMARY:A - H1 - SF Broekhuysen II
+UID:01436d28-49b4-468f-b4f9-601f2412b42e@0143.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nHeimspiel: Nein\nGegner: SV Arminia Kapellen-Hamb\nWettbewerb: Kreisliga B\nSpielort: SV Arminia Kapellen-Hamb\nPlatztyp: Naturrasen
-LOCATION:SV Arminia Kapellen-Hamb
-DTSTART:20270226T190000Z
-SUMMARY:A - H2 - SV Arminia Kapellen-Hamb
-UID:52a3fcbc-3f5d-4e6d-a8e5-d0e6c5c48b01@52a3.org
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nHeimspiel: Ja\nGegner: 1. FC Kleve 63/​03 II\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
+DTSTART:20270307T143000Z
+SUMMARY:H - H1 - 1. FC Kleve 63/​03 II
+UID:3e8c39e0-7835-437f-bfbd-845c77ab7663@3e8c.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nHeimspiel: Nein\nGegner: BV Sturm Wissel\nWettbewerb: Kreisliga A\nSpielort: BV Sturm Wissel\nPlatztyp: Naturrasen
 LOCATION:BV Sturm Wissel
 DTSTART:20261129T133000Z
 SUMMARY:A - H1 - BV Sturm Wissel
-UID:8d156b3d-80da-41c0-a27e-15c3118f577f@8d15.org
+UID:43a98494-4a1e-4443-bfab-cafc6c95e1fa@43a9.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nHeimspiel: Ja\nGegner: SV Grün-Weiß Vernum II\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
-DTSTART:20261018T110000Z
-SUMMARY:H - H2 - SV Grün-Weiß Vernum II
-UID:fc169936-4731-4049-97bc-e947e4062727@fc16.org
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nHeimspiel: Nein\nGegner: FC Aldekerk 1928/​52 II\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
+DTSTART:20261129T140000Z
+SUMMARY:A - H2 - FC Aldekerk 1928/​52 II
+UID:a039a2f2-e3fc-43e0-983b-87df0952684c@a039.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nHeimspiel: Nein\nGegner: SC Blau-Weiß Auwel-Holt\nWettbewerb: Kreisliga B\nSpielort: SC Blau-Weiß Auwel-Holt\nPlatztyp: Kunstrasen
+LOCATION:SC Blau-Weiß Auwel-Holt
+DTSTART:20261025T140000Z
+SUMMARY:A - H2 - SC Blau-Weiß Auwel-Holt
+UID:38ea4188-391c-4880-9e6e-3d265f00faa3@38ea.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nHeimspiel: Ja\nGegner: SV 1913 Walbeck II\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
+DTSTART:20261213T120000Z
+SUMMARY:H - H2 - SV 1913 Walbeck II
+UID:bcfd0358-7463-4d7a-a350-5af59ba8ae84@bcfd.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nHeimspiel: Nein\nGegner: Viktoria Winnekendonk II\nWettbewerb: Kreisliga B\nPlatztyp: Naturrasen
 DTSTART:20270314T120000Z
 SUMMARY:A - H2 - Viktoria Winnekendonk II
-UID:0cc30167-4bef-4891-8021-7737c73fa047@0cc3.org
+UID:411357df-d9a3-42b0-8f13-391ca1ab41b8@4113.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nHeimspiel: Ja\nGegner: SV Walbeck\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
 DTSTART:20261206T143000Z
 SUMMARY:H - H1 - SV Walbeck
-UID:8769e08b-7316-4b9a-8b49-967b8281bd76@8769.org
+UID:d2b358cb-a54e-45af-ad11-812b768c7d05@d2b3.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nHeimspiel: Ja\nGegner: SV Grün-Weiß Vernum\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
-DTSTART:20261018T133000Z
-SUMMARY:H - H1 - SV Grün-Weiß Vernum
-UID:59cb6d7a-530c-4eba-9c83-885aa1021e3c@59cb.org
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nHeimspiel: Ja\nGegner: SV BW Herongen\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
+DTSTART:20270321T120000Z
+SUMMARY:H - H2 - SV BW Herongen
+UID:d02576f2-bcd4-4e60-ac59-1c3a7435d198@d025.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nHeimspiel: Nein\nGegner: DJK Twisteden II\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
+DTSTART:20261115T120000Z
+SUMMARY:A - H2 - DJK Twisteden II
+UID:2120aa7f-b726-4ad9-96dd-3f3f520cd3fc@2120.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nHeimspiel: Ja\nGegner: SG Kessel/​Ho-Ha\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
+DTSTART:20270321T143000Z
+SUMMARY:H - H1 - SG Kessel/​Ho-Ha
+UID:f542017f-7518-45f3-91cc-21bef6de7d5e@f542.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nHeimspiel: Ja\nGegner: SV Viktoria Goch II\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
+DTSTART:20261213T143000Z
+SUMMARY:H - H1 - SV Viktoria Goch II
+UID:2996f489-23c9-45a1-984a-2139d1f530be@2996.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nHeimspiel: Nein\nGegner: Viktoria Winnekendonk\nWettbewerb: Kreisliga A\nPlatztyp: Naturrasen
+DTSTART:20270314T140000Z
+SUMMARY:A - H1 - Viktoria Winnekendonk
+UID:dfcc8b02-8066-4105-8693-da409d756e8d@dfcc.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nHeimspiel: Ja\nGegner: SV BW Herongen II\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
+DTSTART:20261108T120000Z
+SUMMARY:H - H2 - SV BW Herongen II
+UID:c94b19cc-c600-48a4-9063-75960348c419@c94b.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nHeimspiel: Ja\nGegner: SV Germania Wemb\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
+DTSTART:20270307T120000Z
+SUMMARY:H - H2 - SV Germania Wemb
+UID:087af991-fabc-4c41-aab6-5a9fedd86c31@087a.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nHeimspiel: Ja\nGegner: Uedemer SV\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
+DTSTART:20261108T143000Z
+SUMMARY:H - H1 - Uedemer SV
+UID:c0653a51-0476-4998-8e88-b29aa100370d@c065.org
 END:VEVENT
 END:VCALENDAR
