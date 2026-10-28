@@ -2,18 +2,17 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: D-Juniorinnen - TSV Nieukerk\nSaison: 2627\nWettbewerb: Kreisliga A\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/sv-budberg-tsv-nieukerk/-/spiel/031Q0SC9CO000000VS5489BTVT8K11BC\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/02TJRJT8D4000000VS5489BSVUALD4UK
-LOCATION:Rasenplatz
-DTSTART:20261205T144500Z
-SUMMARY:SV Budberg vs TSV Nieukerk
-UID:02TJRJT8D4000000VS5489BSVUALD4UK-2026-12-05-14:45-SV_Budberg-TSV_Nieukerk
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Mannschaft: D-Juniorinnen - TSV Nieukerk\nSaison: 2627\nWettbewerb: Kreisliga A\nSpielort: SV Veert\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/sv-veert-tsv-nieukerk/-/spiel/031Q0SCA88000000VS5489BTVT8K11BC\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/02TJRJT8D4000000VS5489BSVUALD4UK
 LOCATION:SV Veert (Kunstrasen)
 DTSTART:20261107T144500Z
 SUMMARY:SV Veert vs TSV Nieukerk
 UID:02TJRJT8D4000000VS5489BSVUALD4UK-2026-11-07-14:45-SV_Veert-TSV_Nieukerk
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: D-Juniorinnen - TSV Nieukerk\nSaison: 2627\nWettbewerb: Kreisliga A\nSpielseite: https://www.fussball.de/spiel/sv-budberg-tsv-nieukerk/-/spiel/031Q0SC9CO000000VS5489BTVT8K11BC\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/02TJRJT8D4000000VS5489BSVUALD4UK
+DTSTART:20261205T093000Z
+SUMMARY:SV Budberg vs TSV Nieukerk
+UID:02TJRJT8D4000000VS5489BSVUALD4UK-2026-12-05-09:30-SV_Budberg-TSV_Nieukerk
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: D-Juniorinnen - TSV Nieukerk\nSaison: 2627\nWettbewerb: Kreisliga A\nSpielort: TSV Nieukerk\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/tsv-nieukerk-vfr-sw-warbeyen/-/spiel/031Q0SC9KO000000VS5489BTVT8K11BC\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/02TJRJT8D4000000VS5489BSVUALD4UK
