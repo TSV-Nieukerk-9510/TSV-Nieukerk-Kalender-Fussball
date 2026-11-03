@@ -2,13 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nSaison: 2627\nWettbewerb: Kreisliga A\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/sv-1926-rindern-jsg-nieukerk-aldekerk/-/spiel/031SBMNT78000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-nieukerk-aldekerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI97ATG000000VTVG0001VTR8C1K7
-LOCATION:Kunstrasen
-DTSTART:20261121T160000Z
-SUMMARY:SV 1926 Rindern vs JSG Nieukerk /​ Aldekerk
-UID:011MI97ATG000000VTVG0001VTR8C1K7-2026-11-21-16:00-SV_1926_Rindern-JSG_Nieukerk_/​_Aldekerk
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nSaison: 2627\nWettbewerb: Kreisliga A\nSpielort: JSG Nieukerk / Aldekerk\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-sv-19-straelen-ii/-/spiel/031SBMNT40000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-nieukerk-aldekerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI97ATG000000VTVG0001VTR8C1K7
 LOCATION:JSG Nieukerk / Aldekerk (Rasenplatz)
 DTSTART:20261129T110000Z
@@ -56,6 +49,13 @@ LOCATION:SV 1913 Walbeck (Rasenplatz)
 DTSTART:20270314T110000Z
 SUMMARY:SV 1913 Walbeck vs JSG Nieukerk /​ Aldekerk
 UID:011MI97ATG000000VTVG0001VTR8C1K7-2027-03-14-11:00-SV_1913_Walbeck-JSG_Nieukerk_/​_Aldekerk
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nSaison: 2627\nWettbewerb: Kreisliga A\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/sv-1926-rindern-jsg-nieukerk-aldekerk/-/spiel/031SBMNT78000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-nieukerk-aldekerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI97ATG000000VTVG0001VTR8C1K7
+LOCATION:Kunstrasen
+DTSTART:20261121T133000Z
+SUMMARY:SV 1926 Rindern vs JSG Nieukerk /​ Aldekerk
+UID:011MI97ATG000000VTVG0001VTR8C1K7-2026-11-21-13:30-SV_1926_Rindern-JSG_Nieukerk_/​_Aldekerk
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nSaison: 2627\nWettbewerb: Kreisliga A\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-jsg-broekhuysen-herongen-wa-wa/-/spiel/031SBMNTH0000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-nieukerk-aldekerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI97ATG000000VTVG0001VTR8C1K7
