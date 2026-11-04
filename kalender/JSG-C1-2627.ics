@@ -2,11 +2,18 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nSaison: 2627\nWettbewerb: Kreisliga A\nSpielort: JSG Aldekerk / Nieukerk\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-sv-siegfried-materborn/-/spiel/031SBDRVUS000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-aldekerk-nieukerk-fc-aldekerk-28-52-niederrhein/-/saison/2627/team-id/011MICLMI0000000VTVG0001VTR8C1K7
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nSaison: 2627\nWettbewerb: Kreisliga A\nSpielort: JSG Aldekerk / Nieukerk\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-ssv-1953-reichswalde/-/spiel/031SBDRV78000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-aldekerk-nieukerk-fc-aldekerk-28-52-niederrhein/-/saison/2627/team-id/011MICLMI0000000VTVG0001VTR8C1K7
 LOCATION:JSG Aldekerk / Nieukerk (Rasenplatz)
-DTSTART:20261103T180000Z
-SUMMARY:JSG Aldekerk /​ Nieukerk vs SV Siegfried Materborn
-UID:011MICLMI0000000VTVG0001VTR8C1K7-2026-11-03-18:00-JSG_Aldekerk_/​_Nieukerk-SV_Siegfried_Materborn
+DTSTART:20261205T141500Z
+SUMMARY:JSG Aldekerk /​ Nieukerk vs SSV 1953 Reichswalde
+UID:011MICLMI0000000VTVG0001VTR8C1K7-2026-12-05-14:15-JSG_Aldekerk_/​_Nieukerk-SSV_1953_Reichswalde
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nSaison: 2627\nWettbewerb: Kreisliga A\nSpielort: JSG Aldekerk / Nieukerk\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-sv-viktoria-goch/-/spiel/031SBDRVL0000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-aldekerk-nieukerk-fc-aldekerk-28-52-niederrhein/-/saison/2627/team-id/011MICLMI0000000VTVG0001VTR8C1K7
+LOCATION:JSG Aldekerk / Nieukerk (Rasenplatz)
+DTSTART:20261107T141500Z
+SUMMARY:JSG Aldekerk /​ Nieukerk vs SV Viktoria Goch
+UID:011MICLMI0000000VTVG0001VTR8C1K7-2026-11-07-14:15-JSG_Aldekerk_/​_Nieukerk-SV_Viktoria_Goch
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nSaison: 2627\nWettbewerb: Kreisliga A\nSpielort: JSG Aldekerk / Nieukerk\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-alemannia-pfalzdorf/-/spiel/031SBDRVGC000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-aldekerk-nieukerk-fc-aldekerk-28-52-niederrhein/-/saison/2627/team-id/011MICLMI0000000VTVG0001VTR8C1K7
@@ -21,19 +28,5 @@ LOCATION:BV Sturm Wissel (Rasenplatz)
 DTSTART:20261128T130000Z
 SUMMARY:BV Sturm Wissel vs JSG Aldekerk /​ Nieukerk
 UID:011MICLMI0000000VTVG0001VTR8C1K7-2026-11-28-13:00-BV_Sturm_Wissel-JSG_Aldekerk_/​_Nieukerk
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nSaison: 2627\nWettbewerb: Kreisliga A\nSpielort: JSG Aldekerk / Nieukerk\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-sv-viktoria-goch/-/spiel/031SBDRVL0000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-aldekerk-nieukerk-fc-aldekerk-28-52-niederrhein/-/saison/2627/team-id/011MICLMI0000000VTVG0001VTR8C1K7
-LOCATION:JSG Aldekerk / Nieukerk (Rasenplatz)
-DTSTART:20261107T141500Z
-SUMMARY:JSG Aldekerk /​ Nieukerk vs SV Viktoria Goch
-UID:011MICLMI0000000VTVG0001VTR8C1K7-2026-11-07-14:15-JSG_Aldekerk_/​_Nieukerk-SV_Viktoria_Goch
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nSaison: 2627\nWettbewerb: Kreisliga A\nSpielort: JSG Aldekerk / Nieukerk\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-ssv-1953-reichswalde/-/spiel/031SBDRV78000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-aldekerk-nieukerk-fc-aldekerk-28-52-niederrhein/-/saison/2627/team-id/011MICLMI0000000VTVG0001VTR8C1K7
-LOCATION:JSG Aldekerk / Nieukerk (Rasenplatz)
-DTSTART:20261205T141500Z
-SUMMARY:JSG Aldekerk /​ Nieukerk vs SSV 1953 Reichswalde
-UID:011MICLMI0000000VTVG0001VTR8C1K7-2026-12-05-14:15-JSG_Aldekerk_/​_Nieukerk-SSV_1953_Reichswalde
 END:VEVENT
 END:VCALENDAR
