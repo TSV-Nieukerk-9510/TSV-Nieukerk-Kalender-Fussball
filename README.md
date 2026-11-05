@@ -150,6 +150,24 @@ https://raw.githubusercontent.com/TSV-Nieukerk-9510/TSV-Nieukerk-Kalender-Fussba
 
 ---
 
+## E-Juniorinnen - TSV Nieukerk (W-U11)
+
+**Kalenderdatei:** `E-Juniorinnen-TSV-Nieukerk-W-U11-2627.ics`
+
+📅 **Kalender abonnieren:**
+
+https://raw.githubusercontent.com/TSV-Nieukerk-9510/TSV-Nieukerk-Kalender-Fussball/main/kalender/E-Juniorinnen-TSV-Nieukerk-W-U11-2627.ics
+
+⚽ **Mannschaftsseite:**
+
+https://www.fussball.de/mannschaft/tsv-nieukerk-w-u11-tsv-nieukerk-niederrhein/-/saison/2627/team-id/02T9OPVD8O000000VS5489BRVTHNGU03
+
+📱 **QR-Code:**
+
+https://raw.githubusercontent.com/TSV-Nieukerk-9510/TSV-Nieukerk-Kalender-Fussball/main/qr/E-Juniorinnen-TSV-Nieukerk-W-U11-2627.png
+
+---
+
 ## F-Junioren - TSV Nieukerk
 
 **Kalenderdatei:** `TSV-F1-2627.ics`
