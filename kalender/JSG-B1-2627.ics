@@ -2,6 +2,13 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nSaison: 2627\nWettbewerb: Kreisliga A\nSpielort: JSG Nieukerk / Aldekerk\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-jsg-sge-sv-bedburg-hau/-/spiel/031SBMO17K000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-nieukerk-aldekerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI97ATG000000VTVG0001VTR8C1K7
+LOCATION:JSG Nieukerk / Aldekerk (Rasenplatz)
+DTSTART:20270425T110000Z
+SUMMARY:JSG Nieukerk /​ Aldekerk vs JSG SGE/​SV Bedburg-Hau
+UID:011MI97ATG000000VTVG0001VTR8C1K7-2027-04-25-11:00-JSG_Nieukerk_/​_Aldekerk-JSG_SGE/​SV_Bedburg-Hau
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nSaison: 2627\nWettbewerb: Kreisliga A\nSpielort: JSG Nieukerk / Aldekerk\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-sv-19-straelen-ii/-/spiel/031SBMNT40000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-nieukerk-aldekerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI97ATG000000VTVG0001VTR8C1K7
 LOCATION:JSG Nieukerk / Aldekerk (Rasenplatz)
 DTSTART:20261129T110000Z
@@ -49,13 +56,6 @@ LOCATION:Kunstrasen
 DTSTART:20261121T133000Z
 SUMMARY:SV 1926 Rindern vs JSG Nieukerk /​ Aldekerk
 UID:011MI97ATG000000VTVG0001VTR8C1K7-2026-11-21-13:30-SV_1926_Rindern-JSG_Nieukerk_/​_Aldekerk
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nSaison: 2627\nWettbewerb: Kreisliga A\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-jsg-broekhuysen-herongen-wa-wa/-/spiel/031SBMNTH0000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-nieukerk-aldekerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI97ATG000000VTVG0001VTR8C1K7
-LOCATION:Kunstrasen
-DTSTART:20261114T160000Z
-SUMMARY:JSG Nieukerk /​ Aldekerk vs JSG Broekhuysen /​ Herongen /​ Wa-Wa
-UID:011MI97ATG000000VTVG0001VTR8C1K7-2026-11-14-16:00-JSG_Nieukerk_/​_Aldekerk-JSG_Broekhuysen_/​_Herongen_/​_Wa-Wa
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nSaison: 2627\nWettbewerb: Kreisliga A\nSpielort: JSG Nieukerk / Aldekerk\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-jsg-uedem-keppeln-louisendorf/-/spiel/031SBMO3B0000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-nieukerk-aldekerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI97ATG000000VTVG0001VTR8C1K7
