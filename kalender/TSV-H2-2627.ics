@@ -2,13 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nSaison: 2627\nWettbewerb: Kreisliga B\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/djk-twisteden-ii-tsv-nieukerk-ii/-/spiel/031JH99TUC000000VS5489BUVVKNMR0J\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-ii-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIDJU5C000000VTVG0001VTR8C1K7
-LOCATION:Kunstrasen
-DTSTART:20261115T130000Z
-SUMMARY:DJK Twisteden II vs TSV Nieukerk II
-UID:011MIDJU5C000000VTVG0001VTR8C1K7-2026-11-15-13:00-DJK_Twisteden_II-TSV_Nieukerk_II
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nSaison: 2627\nWettbewerb: Kreisliga B\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/tsv-nieukerk-ii-sv-bw-herongen/-/spiel/031JH9ACG0000000VS5489BUVVKNMR0J\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-ii-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIDJU5C000000VTVG0001VTR8C1K7
 LOCATION:Kunstrasen
 DTSTART:20270321T130000Z
@@ -28,6 +21,13 @@ LOCATION:SV Arminia Kapellen-Hamb (Rasenplatz)
 DTSTART:20270226T200000Z
 SUMMARY:SV Arminia Kapellen-Hamb vs TSV Nieukerk II
 UID:011MIDJU5C000000VTVG0001VTR8C1K7-2027-02-26-20:00-SV_Arminia_Kapellen-Hamb-TSV_Nieukerk_II
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nSaison: 2627\nWettbewerb: Kreisliga B\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/tsv-nieukerk-ii-sv-issum/-/spiel/031JH9ABB8000000VS5489BUVVKNMR0J\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-ii-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIDJU5C000000VTVG0001VTR8C1K7
+LOCATION:Kunstrasen
+DTSTART:20270411T130000Z
+SUMMARY:TSV Nieukerk II vs SV Issum
+UID:011MIDJU5C000000VTVG0001VTR8C1K7-2027-04-11-13:00-TSV_Nieukerk_II-SV_Issum
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nSaison: 2627\nWettbewerb: Kreisliga B\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/tsv-nieukerk-ii-sv-germania-wemb/-/spiel/031JH9AEG8000000VS5489BUVVKNMR0J\nMannschaftsseite: https://www.fussball.de/mannschaft/tsv-nieukerk-ii-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIDJU5C000000VTVG0001VTR8C1K7
