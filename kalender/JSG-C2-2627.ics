@@ -2,6 +2,27 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nSaison: 2627\nWettbewerb: Kreisliga B\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/jsg-gw-vernum-rw-geldern-jsg-aldekerk-nieukerk-ii/-/spiel/031SBJJN2O000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-aldekerk-nieukerk-ii-fc-aldekerk-28-52-niederrhein/-/saison/2627/team-id/0241K94L5S000000VS548984VS0FQV4H
+LOCATION:Kunstrasen
+DTSTART:20261205T141500Z
+SUMMARY:JSG GW Vernum /​ RW Geldern vs JSG Aldekerk /​ Nieukerk II
+UID:0241K94L5S000000VS548984VS0FQV4H-2026-12-05-14:15-JSG_GW_Vernum_/​_RW_Geldern-JSG_Aldekerk_/​_Nieukerk_II
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nSaison: 2627\nWettbewerb: Kreisfreundschaftsspiele\nSpielort: JSG Aldekerk / Nieukerk II\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-ii-asv-einigkeit-suechteln-c3/-/spiel/032QFD0I3C000000VS5489BTVSIO88SN\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-aldekerk-nieukerk-ii-fc-aldekerk-28-52-niederrhein/-/saison/2627/team-id/0241K94L5S000000VS548984VS0FQV4H
+LOCATION:JSG Aldekerk / Nieukerk II (Rasenplatz)
+DTSTART:20270220T150000Z
+SUMMARY:JSG Aldekerk /​ Nieukerk II vs ASV Einigkeit Süchteln C3
+UID:0241K94L5S000000VS548984VS0FQV4H-2027-02-20-15:00-JSG_Aldekerk_/​_Nieukerk_II-ASV_Einigkeit_Süchteln_C3
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nSaison: 2627\nWettbewerb: Kreisliga B\nSpielort: JSG Aldekerk / Nieukerk II\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-ii-kevelaerer-sv-iii/-/spiel/031SBJJN58000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-aldekerk-nieukerk-ii-fc-aldekerk-28-52-niederrhein/-/saison/2627/team-id/0241K94L5S000000VS548984VS0FQV4H
+LOCATION:JSG Aldekerk / Nieukerk II (Rasenplatz)
+DTSTART:20261128T141500Z
+SUMMARY:JSG Aldekerk /​ Nieukerk II vs Kevelaerer SV III
+UID:0241K94L5S000000VS548984VS0FQV4H-2026-11-28-14:15-JSG_Aldekerk_/​_Nieukerk_II-Kevelaerer_SV_III
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nSaison: 2627\nWettbewerb: Kreisliga B\nSpielort: JSG Aldekerk / Nieukerk II\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-ii-kevelaerer-sv-iii/-/spiel/031SBJJN58000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-aldekerk-nieukerk-ii-fc-aldekerk-28-52-niederrhein/-/saison/2627/team-id/0241K94L5S000000VS548984VS0FQV4H
 LOCATION:JSG Aldekerk / Nieukerk II (Rasenplatz)
 DTSTART:20261125T183000Z
@@ -14,19 +35,5 @@ LOCATION:JSG Aldekerk / Nieukerk II (Rasenplatz)
 DTSTART:20270206T140000Z
 SUMMARY:JSG Aldekerk /​ Nieukerk II vs JSG Kempen/​Tönisberg C2
 UID:0241K94L5S000000VS548984VS0FQV4H-2027-02-06-14:00-JSG_Aldekerk_/​_Nieukerk_II-JSG_Kempen/​Tönisberg_C2
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nSaison: 2627\nWettbewerb: Kreisliga B\nSpielort: JSG Aldekerk / Nieukerk II\nBelag: Rasenplatz\nSpielseite: https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-ii-kevelaerer-sv-iii/-/spiel/031SBJJN58000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-aldekerk-nieukerk-ii-fc-aldekerk-28-52-niederrhein/-/saison/2627/team-id/0241K94L5S000000VS548984VS0FQV4H
-LOCATION:JSG Aldekerk / Nieukerk II (Rasenplatz)
-DTSTART:20261128T141500Z
-SUMMARY:JSG Aldekerk /​ Nieukerk II vs Kevelaerer SV III
-UID:0241K94L5S000000VS548984VS0FQV4H-2026-11-28-14:15-JSG_Aldekerk_/​_Nieukerk_II-Kevelaerer_SV_III
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nSaison: 2627\nWettbewerb: Kreisliga B\nBelag: Kunstrasen\nSpielseite: https://www.fussball.de/spiel/jsg-gw-vernum-rw-geldern-jsg-aldekerk-nieukerk-ii/-/spiel/031SBJJN2O000000VS5489BTVTPHHFPR\nMannschaftsseite: https://www.fussball.de/mannschaft/jsg-aldekerk-nieukerk-ii-fc-aldekerk-28-52-niederrhein/-/saison/2627/team-id/0241K94L5S000000VS548984VS0FQV4H
-LOCATION:Kunstrasen
-DTSTART:20261205T141500Z
-SUMMARY:JSG GW Vernum /​ RW Geldern vs JSG Aldekerk /​ Nieukerk II
-UID:0241K94L5S000000VS548984VS0FQV4H-2026-12-05-14:15-JSG_GW_Vernum_/​_RW_Geldern-JSG_Aldekerk_/​_Nieukerk_II
 END:VEVENT
 END:VCALENDAR
