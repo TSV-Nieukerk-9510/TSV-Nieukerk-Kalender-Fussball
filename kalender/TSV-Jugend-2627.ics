@@ -2,302 +2,295 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nHeimspiel: Ja\nGegner: SSV 1953 Reichswalde\nWettbewerb: Kreisliga A\nSpielort: JSG Aldekerk / Nieukerk\nPlatztyp: Naturrasen
-LOCATION:JSG Aldekerk / Nieukerk
-DTSTART:20261205T131500Z
-SUMMARY:H - C1 - SSV 1953 Reichswalde
-UID:dd4155ed-3421-4485-aee7-63502ab56f60@dd41.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nHeimspiel: Nein\nGegner: JSG SV/​SGE Bedburg-Hau\nWettbewerb: Kreisliga A\nSpielort: JSG SV/SGE Bedburg-Hau\nPlatztyp: Naturrasen
-LOCATION:JSG SV/SGE Bedburg-Hau
-DTSTART:20270425T090000Z
-SUMMARY:A - Nieukerk - JSG SV/​SGE Bedburg-Hau
-UID:7cd9fe25-12ed-4518-9559-9e8a763d8496@7cd9.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: D-Junioren - TSV Nieukerk\nHeimspiel: Nein\nGegner: JSG Herongen /​ Broekhuysen\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
-DTSTART:20261205T114500Z
-SUMMARY:A - D1 - JSG Herongen /​ Broekhuysen
-UID:abe8b92f-fa5c-4450-b0d1-055de1642e95@abe8.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nHeimspiel: Ja\nGegner: Kevelaerer SV\nWettbewerb: Kreisliga A\nSpielort: JSG FC Aldekerk / TSV Nieukerk\nPlatztyp: Naturrasen
-LOCATION:JSG FC Aldekerk / TSV Nieukerk
-DTSTART:20261206T100000Z
-SUMMARY:H - Nieukerk - Kevelaerer SV
-UID:e84fb246-a61c-4a2f-8ff4-088bc8eb9bdd@e84f.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nHeimspiel: Nein\nGegner: JSG GW Vernum /​ RW Geldern\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
-DTSTART:20261205T131500Z
-SUMMARY:A - C2 - JSG GW Vernum /​ RW Geldern
-UID:7db5c8f5-3c5b-494c-a9f2-bf24bfae758b@7db5.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: D-Junioren - TSV Nieukerk\nHeimspiel: Ja\nGegner: JSG GW Vernum /​ RW Geldern\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
-DTSTART:20261128T110000Z
-SUMMARY:H - D1 - JSG GW Vernum /​ RW Geldern
-UID:8c54d58a-e005-4899-b83e-ec59cdb5c38a@8c54.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: D-Juniorinnen - TSV Nieukerk\nHeimspiel: Nein\nGegner: SV Budberg\nWettbewerb: Kreisliga A\nPlatztyp: Nicht angegeben\n\n⚠ Automatische Zuordnung\nKeine Platzinformation auf fussball.de gefunden.\nDer Termin wurde dem Kunstrasen-Kalender zugeordnet.
-DTSTART:20261205T083000Z
-SUMMARY:A - DM - SV Budberg
-UID:09f2df82-6967-4eb3-b3b6-607c1f3f4d47@09f2.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nHeimspiel: Nein\nGegner: JSG Broekhuysen /​ Herongen /​ Wa-Wa\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
-DTSTART:20270502T090000Z
-SUMMARY:A - B1 - JSG Broekhuysen /​ Herongen /​ Wa-Wa
-UID:bdd2b99b-dc48-4f87-9f88-28047dff7656@bdd2.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: G-Junioren - TSV Nieukerk\nHeimspiel: Nein\nGegner: Kevelaerer SV\nWettbewerb: Kinderfußball\nPlatztyp: Nicht angegeben\n\n⚠ Automatische Zuordnung\nKeine Platzinformation auf fussball.de gefunden.\nDer Termin wurde dem Kunstrasen-Kalender zugeordnet.
-DTSTART:20261205T084500Z
-SUMMARY:A - G1 - KFV
-UID:4ca8d946-5f47-4c8a-bb55-67b3e0e6cfff@4ca8.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk II\nHeimspiel: Nein\nGegner: SV Issum II\nWettbewerb: Kinderfußball\nSpielort: Am Sportplatz 15\, 47661 Issum\, Rasenplatz\nPlatztyp: Naturrasen
-LOCATION:Am Sportplatz 15\, 47661 Issum\, Rasenplatz
-DTSTART:20261128T101500Z
-SUMMARY:A - E2 - KFV
-UID:4dbbed7f-c15e-407b-b082-e55112aeaa46@4dbb.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nHeimspiel: Nein\nGegner: SSV 1953 Reichswalde\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
-DTSTART:20261129T100000Z
-SUMMARY:A - Nieukerk - SSV 1953 Reichswalde
-UID:a47a8538-48ba-468b-8073-9a624013ab5f@a47a.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nHeimspiel: Nein\nGegner: JSG Issum /​ Sevelen\nWettbewerb: Kreisliga A\nSpielort: JSG Issum / Sevelen\nPlatztyp: Naturrasen
-LOCATION:JSG Issum / Sevelen
-DTSTART:20270418T090000Z
-SUMMARY:A - B1 - JSG Issum /​ Sevelen
-UID:41775816-4b4d-44fe-abd8-9f3aac216d7a@4177.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nHeimspiel: Nein\nGegner: JSG Vikt. Winnekendonk /​ TSV Weeze\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
-DTSTART:20270221T100000Z
-SUMMARY:A - Nieukerk - JSG Vikt. Winnekendonk /​ TSV Weeze
-UID:8abba0cd-55bb-44dc-9998-990f43945965@8abb.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nHeimspiel: Nein\nGegner: SSV 1953 Reichswalde\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
-DTSTART:20261212T130000Z
-SUMMARY:A - Nieukerk - SSV 1953 Reichswalde
-UID:0bf03e2a-e2b7-43d7-9e68-4824ac3f55d5@0bf0.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nHeimspiel: Ja\nGegner: BV Sturm Wissel\nWettbewerb: Kreisliga A\nSpielort: JSG Nieukerk / Aldekerk\nPlatztyp: Naturrasen
-LOCATION:JSG Nieukerk / Aldekerk
-DTSTART:20270411T090000Z
-SUMMARY:H - B1 - BV Sturm Wissel
-UID:4aa56b53-708f-4f06-bfd4-3b786c87cdfc@4aa5.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: E-Juniorinnen - TSV Nieukerk (W-U11)\nHeimspiel: Ja\nGegner: TSV Nieukerk (W-U11)\nWettbewerb: Kinderfußball\nSpielort: Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz\nPlatztyp: Naturrasen
-LOCATION:Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz
-DTSTART:20261128T084500Z
-SUMMARY:H - U11 - KFV
-UID:a5734b0d-99d8-4ebd-88f7-8d79af0b6058@a573.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nHeimspiel: Ja\nGegner: Kevelaerer SV III\nWettbewerb: Kreisliga B\nSpielort: JSG Aldekerk / Nieukerk II\nPlatztyp: Naturrasen
-LOCATION:JSG Aldekerk / Nieukerk II
-DTSTART:20261128T131500Z
-SUMMARY:H - C2 - Kevelaerer SV III
-UID:ae05b1cb-9d2a-4757-8668-1c027804dae6@ae05.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nHeimspiel: Ja\nGegner: ASV Einigkeit Süchteln C3\nWettbewerb: Kreisfreundschaftsspiele\nSpielort: JSG Aldekerk / Nieukerk II\nPlatztyp: Naturrasen
-LOCATION:JSG Aldekerk / Nieukerk II
-DTSTART:20270220T140000Z
-SUMMARY:H - C2 - ASV Einigkeit Süchteln C3
-UID:b433c9bf-7a33-4a2d-9269-5386791c0ac2@b433.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: E-Juniorinnen - TSV Nieukerk (W-U11)\nHeimspiel: Nein\nGegner: Kevelaerer SV II\nWettbewerb: Kinderfußball\nPlatztyp: Naturrasen
-DTSTART:20261205T084500Z
-SUMMARY:A - U11 - KFV
-UID:245a8f6b-c45a-4b64-a839-4a26be623912@245a.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nHeimspiel: Ja\nGegner: Kevelaerer SV III\nWettbewerb: Kreisliga B\nSpielort: JSG Aldekerk / Nieukerk II\nPlatztyp: Naturrasen
-LOCATION:JSG Aldekerk / Nieukerk II
-DTSTART:20261125T173000Z
-SUMMARY:H - C2 - Kevelaerer SV III
-UID:3ab0f1f2-4942-4516-b537-f123f7b89142@3ab0.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nHeimspiel: Ja\nGegner: JSG SGE/​SV Bedburg-Hau\nWettbewerb: Kreisliga A\nSpielort: JSG Nieukerk / Aldekerk\nPlatztyp: Naturrasen
-LOCATION:JSG Nieukerk / Aldekerk
-DTSTART:20270425T090000Z
-SUMMARY:H - B1 - JSG SGE/​SV Bedburg-Hau
-UID:7e600787-7933-4f95-910b-776a1d2ec92f@7e60.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nHeimspiel: Ja\nGegner: JSG Kempen/​Tönisberg C2\nWettbewerb: Kreisfreundschaftsspiele\nSpielort: JSG Aldekerk / Nieukerk II\nPlatztyp: Naturrasen
-LOCATION:JSG Aldekerk / Nieukerk II
-DTSTART:20270206T130000Z
-SUMMARY:H - C2 - JSG Kempen/​Tönisberg C2
-UID:3f8d73df-557c-4ec5-8ba1-b38caacebe07@3f8d.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: D-Junioren - TSV Nieukerk\nHeimspiel: Ja\nGegner: JSG GW Vernum /​ RW Geldern\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
-DTSTART:20261203T170000Z
-SUMMARY:H - D1 - JSG GW Vernum /​ RW Geldern
-UID:cc3765bd-c732-46ac-968a-825090dea5e7@cc37.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nHeimspiel: Ja\nGegner: SV 19 Straelen II\nWettbewerb: Kreisliga A\nSpielort: JSG Nieukerk / Aldekerk\nPlatztyp: Naturrasen
-LOCATION:JSG Nieukerk / Aldekerk
-DTSTART:20261129T100000Z
-SUMMARY:H - B1 - SV 19 Straelen II
-UID:00eb1408-e0ce-48a6-9eb6-7854f5961706@00eb.org
+DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nHeimspiel: Nein\nGegner: SV 1913 Walbeck\nWettbewerb: Kreisliga A\nSpielort: SV 1913 Walbeck\nPlatztyp: Kunstrasen
+LOCATION:SV 1913 Walbeck
+DTSTART:20270307T100000Z
+SUMMARY:A - Nieukerk - SV 1913 Walbeck
+UID:85d93e6b-9c03-478c-9172-09885c2953ed@85d9.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nHeimspiel: Ja\nGegner: SV 1934 Veert\nWettbewerb: Kreisliga A\nSpielort: JSG Nieukerk / Aldekerk\nPlatztyp: Naturrasen
 LOCATION:JSG Nieukerk / Aldekerk
 DTSTART:20270307T100000Z
 SUMMARY:H - B1 - SV 1934 Veert
-UID:7feea655-d33e-4909-999e-ebdcf6ae11fd@7fee.org
+UID:2ffbbcd6-9cca-4830-bf87-f96ba2d9be2d@2ffb.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nHeimspiel: Ja\nGegner: SV Siegfried Materborn\nWettbewerb: Kreisliga A\nSpielort: JSG FC Aldekerk / TSV Nieukerk\nPlatztyp: Naturrasen
-LOCATION:JSG FC Aldekerk / TSV Nieukerk
-DTSTART:20270314T100000Z
-SUMMARY:H - Nieukerk - SV Siegfried Materborn
-UID:0a5f63cc-3422-4b46-b369-26097d4ecc4e@0a5f.org
+DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nHeimspiel: Nein\nGegner: JSG SV/​SGE Bedburg-Hau\nWettbewerb: Kreisliga A\nSpielort: JSG SV/SGE Bedburg-Hau\nPlatztyp: Naturrasen
+LOCATION:JSG SV/SGE Bedburg-Hau
+DTSTART:20270425T090000Z
+SUMMARY:A - Nieukerk - JSG SV/​SGE Bedburg-Hau
+UID:b4fdea0c-e51b-4d08-980b-d3f0f9234972@b4fd.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk\nHeimspiel: Ja\nGegner: TSV Nieukerk\nWettbewerb: Kinderfußball\nSpielort: Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz\nPlatztyp: Naturrasen
-LOCATION:Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz
-DTSTART:20261128T101500Z
-SUMMARY:H - E1 - KFV
-UID:8766d806-8712-44dc-b4c0-2f557fc07bb5@8766.org
+DESCRIPTION:Mannschaft: D-Juniorinnen - TSV Nieukerk\nHeimspiel: Nein\nGegner: SV Budberg\nWettbewerb: Kreisliga A\nPlatztyp: Nicht angegeben\n\n⚠ Automatische Zuordnung\nKeine Platzinformation auf fussball.de gefunden.\nDer Termin wurde dem Kunstrasen-Kalender zugeordnet.
+DTSTART:20261205T083000Z
+SUMMARY:A - DM - SV Budberg
+UID:49871fb1-af0a-4141-b3d1-435346335eae@4987.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: D-Juniorinnen - TSV Nieukerk\nHeimspiel: Ja\nGegner: VFR SW Warbeyen\nWettbewerb: Kreisliga A\nSpielort: TSV Nieukerk\nPlatztyp: Naturrasen
-LOCATION:TSV Nieukerk
-DTSTART:20261128T134500Z
-SUMMARY:H - DM - VFR SW Warbeyen
-UID:80dcd084-5cf4-412d-9662-b98870943b75@80dc.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nHeimspiel: Nein\nGegner: JSG Herongen /​ Broekhuysen /​ Wa-Wa\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
-DTSTART:20270411T090000Z
-SUMMARY:A - Nieukerk - JSG Herongen /​ Broekhuysen /​ Wa-Wa
-UID:a6f6a619-85f4-4df7-bda6-cabc8e091006@a6f6.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nHeimspiel: Ja\nGegner: BV Sturm Wissel\nWettbewerb: Kreisliga A\nSpielort: JSG Aldekerk / Nieukerk\nPlatztyp: Naturrasen
-LOCATION:JSG Aldekerk / Nieukerk
-DTSTART:20261209T173000Z
-SUMMARY:H - C1 - BV Sturm Wissel
-UID:ff5ce36c-37a7-446b-b3b3-62356ccd1ca9@ff5c.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nHeimspiel: Ja\nGegner: JSG Uedem /​ Keppeln /​ Louisendorf\nWettbewerb: Kreisliga A\nSpielort: JSG Nieukerk / Aldekerk\nPlatztyp: Naturrasen
-LOCATION:JSG Nieukerk / Aldekerk
-DTSTART:20270221T100000Z
-SUMMARY:H - B1 - JSG Uedem /​ Keppeln /​ Louisendorf
-UID:6f61b0f9-d33f-48a1-a1a4-85250102f4db@6f61.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk\nHeimspiel: Nein\nGegner: JSG Uedem /​ Keppeln /​ Louisendorf\nWettbewerb: Kinderfußball\nSpielort: Tönisstr. 41\, 47589 Uedem\, Rasenplatz\nPlatztyp: Naturrasen
-LOCATION:Tönisstr. 41\, 47589 Uedem\, Rasenplatz
-DTSTART:20261203T160000Z
-SUMMARY:A - E1 - KFV
-UID:1bf1d547-668d-4018-b73b-c69ca30f97f2@1bf1.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nHeimspiel: Nein\nGegner: BV Sturm Wissel\nWettbewerb: Kreisliga A\nSpielort: JSG Aldekerk / Nieukerk\nPlatztyp: Naturrasen
-LOCATION:JSG Aldekerk / Nieukerk
-DTSTART:20261128T120000Z
-SUMMARY:A - C1 - BV Sturm Wissel
-UID:a22262fc-2b38-4ba9-8b9d-2fbac0deae05@a222.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk II\nHeimspiel: Nein\nGegner: SV 19 Sevelen II\nWettbewerb: Kinderfußball\nSpielort: Koetherdyck 22\, 47661 Issum\, Rasenplatz\nPlatztyp: Naturrasen
-LOCATION:Koetherdyck 22\, 47661 Issum\, Rasenplatz
-DTSTART:20261128T084500Z
-SUMMARY:A - F2 - KFV
-UID:ced411b0-355f-4e95-bbc3-582fe030e16e@ced4.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk II\nHeimspiel: Ja\nGegner: TSV Nieukerk II\nWettbewerb: Kinderfußball\nSpielort: Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz\nPlatztyp: Naturrasen
-LOCATION:Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz
-DTSTART:20261205T084500Z
-SUMMARY:H - F2 - KFV
-UID:54ca467c-29eb-40eb-b45f-88fc603a6ab4@54ca.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk\nHeimspiel: Ja\nGegner: TSV Nieukerk\nWettbewerb: Kinderfußball\nSpielort: Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz\nPlatztyp: Naturrasen
-LOCATION:Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz
-DTSTART:20261205T084500Z
-SUMMARY:H - F1 - KFV
-UID:6b7ac8f3-7299-42bf-8085-60ef3726cc9c@6b7a.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nHeimspiel: Nein\nGegner: Kevelaerer SV\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
-DTSTART:20261206T100000Z
-SUMMARY:A - B1 - Kevelaerer SV
-UID:e7f6f062-ae99-4bb1-ba88-0e155cd51f11@e7f6.org
+DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nHeimspiel: Nein\nGegner: SSV 1953 Reichswalde\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
+DTSTART:20261212T130000Z
+SUMMARY:A - Nieukerk - SSV 1953 Reichswalde
+UID:ca7ba0fb-c95e-4c08-bb1a-253d791b3410@ca7b.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk\nHeimspiel: Nein\nGegner: JSG GW Vernum /​ RW Geldern II\nWettbewerb: Kinderfußball\nPlatztyp: Kunstrasen
 DTSTART:20261128T084500Z
 SUMMARY:A - F1 - KFV
-UID:dd6da779-2c45-4c90-b4ec-1edb5c1a4017@dd6d.org
+UID:299b1fee-e0a5-4c3b-b98e-5cb486ce2830@299b.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk II\nHeimspiel: Nein\nGegner: JSG Herongen /​ Broekhuysen\nWettbewerb: Kinderfußball\nPlatztyp: Kunstrasen
-DTSTART:20261205T101500Z
-SUMMARY:A - E2 - KFV
-UID:78b50c96-69c2-4737-b212-964ac457f73f@78b5.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nHeimspiel: Nein\nGegner: TSV Weeze 10/​19\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
-DTSTART:20270227T150000Z
-SUMMARY:A - B1 - TSV Weeze 10/​19
-UID:346d1690-8711-4e0b-94c7-a460d26c9d7a@346d.org
+DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nHeimspiel: Ja\nGegner: Kevelaerer SV\nWettbewerb: Kreisliga A\nSpielort: JSG FC Aldekerk / TSV Nieukerk\nPlatztyp: Naturrasen
+LOCATION:JSG FC Aldekerk / TSV Nieukerk
+DTSTART:20261206T100000Z
+SUMMARY:H - Nieukerk - Kevelaerer SV
+UID:6d62fd66-6af7-461c-af34-b70de2efc7c6@6d62.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nHeimspiel: Ja\nGegner: JSG Sevelen /​ Issum\nWettbewerb: Kreisliga A\nSpielort: JSG FC Aldekerk / TSV Nieukerk\nPlatztyp: Naturrasen
 LOCATION:JSG FC Aldekerk / TSV Nieukerk
 DTSTART:20270418T090000Z
 SUMMARY:H - Nieukerk - JSG Sevelen /​ Issum
-UID:90c48045-f32c-462d-9ed7-28fbb4899ca3@90c4.org
+UID:993e3215-8462-408c-8809-a9bdb48e1ea1@993e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: D-Junioren - TSV Nieukerk\nHeimspiel: Nein\nGegner: JSG Herongen /​ Broekhuysen\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
+DTSTART:20261205T114500Z
+SUMMARY:A - D1 - JSG Herongen /​ Broekhuysen
+UID:af32bc83-1fbc-4812-8a42-27ab1b3b0af8@af32.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nHeimspiel: Nein\nGegner: SV 1913 Walbeck\nWettbewerb: Kreisliga A\nSpielort: SV 1913 Walbeck\nPlatztyp: Naturrasen
 LOCATION:SV 1913 Walbeck
 DTSTART:20270314T100000Z
 SUMMARY:A - B1 - SV 1913 Walbeck
-UID:47ec9e2a-6655-43d8-a266-1d932ff42a37@47ec.org
+UID:aa98ec03-6164-4a2c-8c7f-b9621b476e5a@aa98.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nHeimspiel: Nein\nGegner: SV 1913 Walbeck\nWettbewerb: Kreisliga A\nSpielort: SV 1913 Walbeck\nPlatztyp: Kunstrasen
-LOCATION:SV 1913 Walbeck
-DTSTART:20270307T100000Z
-SUMMARY:A - Nieukerk - SV 1913 Walbeck
-UID:e392faae-6b22-489f-bca4-83352b332e55@e392.org
+DESCRIPTION:Mannschaft: E-Juniorinnen - TSV Nieukerk (W-U11)\nHeimspiel: Ja\nGegner: TSV Nieukerk (W-U11)\nWettbewerb: Kinderfußball\nSpielort: Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz\nPlatztyp: Naturrasen
+LOCATION:Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz
+DTSTART:20261128T084500Z
+SUMMARY:H - U11 - KFV
+UID:67fcb90c-f948-4359-92c5-82ab7ec7d0c4@67fc.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nHeimspiel: Ja\nGegner: VfB Alemannia Pfalzdorf\nWettbewerb: Kreisliga A\nSpielort: JSG FC Aldekerk / TSV Nieukerk\nPlatztyp: Naturrasen
+DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk II\nHeimspiel: Nein\nGegner: JSG Herongen /​ Broekhuysen\nWettbewerb: Kinderfußball\nPlatztyp: Kunstrasen
+DTSTART:20261205T101500Z
+SUMMARY:A - E2 - KFV
+UID:0004cc31-4d81-4eed-bc75-a1c68eb630ee@0004.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: D-Junioren - TSV Nieukerk\nHeimspiel: Ja\nGegner: JSG GW Vernum /​ RW Geldern\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
+DTSTART:20261128T110000Z
+SUMMARY:H - D1 - JSG GW Vernum /​ RW Geldern
+UID:79e45695-74e3-4bb5-867b-74584ef6f173@79e4.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nHeimspiel: Ja\nGegner: SV Siegfried Materborn\nWettbewerb: Kreisliga A\nSpielort: JSG FC Aldekerk / TSV Nieukerk\nPlatztyp: Naturrasen
 LOCATION:JSG FC Aldekerk / TSV Nieukerk
-DTSTART:20270228T100000Z
-SUMMARY:H - Nieukerk - VfB Alemannia Pfalzdorf
-UID:60cd370d-baa6-49df-817b-9e52b75d0782@60cd.org
+DTSTART:20270314T100000Z
+SUMMARY:H - Nieukerk - SV Siegfried Materborn
+UID:7a559a17-4b84-479b-b746-ef34bac41fbc@7a55.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk II\nHeimspiel: Nein\nGegner: SV 19 Sevelen II\nWettbewerb: Kinderfußball\nSpielort: Koetherdyck 22\, 47661 Issum\, Rasenplatz\nPlatztyp: Naturrasen
+LOCATION:Koetherdyck 22\, 47661 Issum\, Rasenplatz
+DTSTART:20261128T084500Z
+SUMMARY:A - F2 - KFV
+UID:9d33452c-ac89-4cd6-b77c-b3901a953f65@9d33.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk\nHeimspiel: Ja\nGegner: TSV Nieukerk\nWettbewerb: Kinderfußball\nSpielort: Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz\nPlatztyp: Naturrasen
+LOCATION:Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz
+DTSTART:20261205T084500Z
+SUMMARY:H - F1 - KFV
+UID:540bff58-560c-4078-a31d-fd37b0e2c807@540b.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: D-Juniorinnen - TSV Nieukerk\nHeimspiel: Ja\nGegner: VFR SW Warbeyen\nWettbewerb: Kreisliga A\nSpielort: TSV Nieukerk\nPlatztyp: Naturrasen
+LOCATION:TSV Nieukerk
+DTSTART:20261128T134500Z
+SUMMARY:H - DM - VFR SW Warbeyen
+UID:d76b7b90-13d5-40b6-aced-29a68701a229@d76b.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nHeimspiel: Ja\nGegner: Kevelaerer SV III\nWettbewerb: Kreisliga B\nSpielort: JSG Aldekerk / Nieukerk II\, Ausfall\, Kevelaerer SV III\nPlatztyp: Naturrasen
+LOCATION:JSG Aldekerk / Nieukerk II\, Ausfall\, Kevelaerer SV III
+DTSTART:20261128T131500Z
+SUMMARY:H - C2 - Kevelaerer SV III
+UID:ab231073-d8a5-4ee1-a04f-33eaf419bb39@ab23.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nHeimspiel: Ja\nGegner: JSG Uedem /​ Keppeln /​ Louisendorf\nWettbewerb: Kreisliga A\nSpielort: JSG Nieukerk / Aldekerk\nPlatztyp: Naturrasen
+LOCATION:JSG Nieukerk / Aldekerk
+DTSTART:20270221T100000Z
+SUMMARY:H - B1 - JSG Uedem /​ Keppeln /​ Louisendorf
+UID:9a5a33a0-d36e-42b2-b13d-9a2457a55248@9a5a.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nHeimspiel: Ja\nGegner: JSG SGE/​SV Bedburg-Hau\nWettbewerb: Kreisliga A\nSpielort: JSG Nieukerk / Aldekerk\nPlatztyp: Naturrasen
+LOCATION:JSG Nieukerk / Aldekerk
+DTSTART:20270425T090000Z
+SUMMARY:H - B1 - JSG SGE/​SV Bedburg-Hau
+UID:4daef05d-c2c1-47cb-a25c-304435866ce0@4dae.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nHeimspiel: Nein\nGegner: JSG GW Vernum /​ RW Geldern\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
+DTSTART:20261205T131500Z
+SUMMARY:A - C2 - JSG GW Vernum /​ RW Geldern
+UID:9bcbbfbc-5d10-4974-b015-b5a3c443ac17@9bcb.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk II\nHeimspiel: Nein\nGegner: SV Issum II\nWettbewerb: Kinderfußball\nSpielort: Am Sportplatz 15\, 47661 Issum\, Rasenplatz\nPlatztyp: Naturrasen
+LOCATION:Am Sportplatz 15\, 47661 Issum\, Rasenplatz
+DTSTART:20261128T101500Z
+SUMMARY:A - E2 - KFV
+UID:97d95832-68cc-4ef4-9fa4-995c09a606d9@97d9.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nHeimspiel: Nein\nGegner: JSG Vikt. Winnekendonk /​ TSV Weeze\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
+DTSTART:20270221T100000Z
+SUMMARY:A - Nieukerk - JSG Vikt. Winnekendonk /​ TSV Weeze
+UID:b34ffc5f-624e-4516-83a0-0369763dff5b@b34f.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nHeimspiel: Ja\nGegner: ASV Einigkeit Süchteln C3\nWettbewerb: Kreisfreundschaftsspiele\nSpielort: JSG Aldekerk / Nieukerk II\nPlatztyp: Naturrasen
+LOCATION:JSG Aldekerk / Nieukerk II
+DTSTART:20270220T140000Z
+SUMMARY:H - C2 - ASV Einigkeit Süchteln C3
+UID:353f9175-40f4-4800-84db-41cd581f6d65@353f.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mannschaft: G-Junioren - TSV Nieukerk\nHeimspiel: Ja\nGegner: TSV Nieukerk\nWettbewerb: Kinderfußball\nSpielort: Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz\nPlatztyp: Naturrasen
 LOCATION:Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz
 DTSTART:20261128T084500Z
 SUMMARY:H - G1 - KFV
-UID:9473b0ee-5879-4572-bbb3-6a17bac55103@9473.org
+UID:9a61bc5e-323e-4792-be70-6c1e6dec8208@9a61.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nHeimspiel: Nein\nGegner: BV Sturm Wissel\nWettbewerb: Kreisliga A\nSpielort: JSG Aldekerk / Nieukerk\nPlatztyp: Naturrasen
+LOCATION:JSG Aldekerk / Nieukerk
+DTSTART:20261128T120000Z
+SUMMARY:A - C1 - BV Sturm Wissel
+UID:a77bc91e-1989-474d-8039-0fbf665b721a@a77b.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk\nHeimspiel: Ja\nGegner: TSV Nieukerk\nWettbewerb: Kinderfußball\nSpielort: Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz\nPlatztyp: Naturrasen
+LOCATION:Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz
+DTSTART:20261128T101500Z
+SUMMARY:H - E1 - KFV
+UID:4171df62-63f3-4fef-a8d2-235d57bb1bc6@4171.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nHeimspiel: Ja\nGegner: SV 19 Straelen II\nWettbewerb: Kreisliga A\nSpielort: JSG Nieukerk / Aldekerk\nPlatztyp: Naturrasen
+LOCATION:JSG Nieukerk / Aldekerk
+DTSTART:20261129T100000Z
+SUMMARY:H - B1 - SV 19 Straelen II
+UID:29e9b0cb-8934-4cad-bbdd-b9273e555c35@29e9.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nHeimspiel: Nein\nGegner: Kevelaerer SV\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
+DTSTART:20261206T100000Z
+SUMMARY:A - B1 - Kevelaerer SV
+UID:290bb8ed-dbe2-4f69-b74f-eddcedc82692@290b.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nHeimspiel: Nein\nGegner: JSG Broekhuysen /​ Herongen /​ Wa-Wa\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
+DTSTART:20270502T090000Z
+SUMMARY:A - B1 - JSG Broekhuysen /​ Herongen /​ Wa-Wa
+UID:754c7b00-f4e4-465c-a6c1-d2983aa6fa8e@754c.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nHeimspiel: Nein\nGegner: JSG Issum /​ Sevelen\nWettbewerb: Kreisliga A\nSpielort: JSG Issum / Sevelen\nPlatztyp: Naturrasen
+LOCATION:JSG Issum / Sevelen
+DTSTART:20270418T090000Z
+SUMMARY:A - B1 - JSG Issum /​ Sevelen
+UID:03a5c366-be40-4fad-a15b-57164ad922e1@03a5.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nHeimspiel: Ja\nGegner: BV Sturm Wissel\nWettbewerb: Kreisliga A\nSpielort: JSG Aldekerk / Nieukerk\nPlatztyp: Naturrasen
+LOCATION:JSG Aldekerk / Nieukerk
+DTSTART:20261209T173000Z
+SUMMARY:H - C1 - BV Sturm Wissel
+UID:a21181e3-7c47-4e19-9dca-194441106c84@a211.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk II\nHeimspiel: Ja\nGegner: TSV Nieukerk II\nWettbewerb: Kinderfußball\nSpielort: Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz\nPlatztyp: Naturrasen
+LOCATION:Am Aermen Düwel 16\, 47647 Kerken\, Rasenplatz
+DTSTART:20261205T084500Z
+SUMMARY:H - F2 - KFV
+UID:cd93059e-c61a-4d97-bc21-66e581a4ec3c@cd93.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: G-Junioren - TSV Nieukerk\nHeimspiel: Nein\nGegner: Kevelaerer SV\nWettbewerb: Kinderfußball\nPlatztyp: Nicht angegeben\n\n⚠ Automatische Zuordnung\nKeine Platzinformation auf fussball.de gefunden.\nDer Termin wurde dem Kunstrasen-Kalender zugeordnet.
+DTSTART:20261205T084500Z
+SUMMARY:A - G1 - KFV
+UID:cc493203-d96c-4de6-a32a-91ab5b6ea45d@cc49.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: E-Juniorinnen - TSV Nieukerk (W-U11)\nHeimspiel: Nein\nGegner: Kevelaerer SV II\nWettbewerb: Kinderfußball\nPlatztyp: Naturrasen
+DTSTART:20261205T084500Z
+SUMMARY:A - U11 - KFV
+UID:440e88c5-7942-4604-9927-0800d78b14fd@440e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nHeimspiel: Nein\nGegner: TSV Weeze 10/​19\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
+DTSTART:20270227T150000Z
+SUMMARY:A - B1 - TSV Weeze 10/​19
+UID:34805511-1f9c-47fc-9103-8de7de39fa06@3480.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nHeimspiel: Nein\nGegner: JSG Herongen /​ Broekhuysen /​ Wa-Wa\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
+DTSTART:20270411T090000Z
+SUMMARY:A - Nieukerk - JSG Herongen /​ Broekhuysen /​ Wa-Wa
+UID:0ffc9177-7fe1-455c-aecb-ee1a90a144e3@0ffc.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nHeimspiel: Nein\nGegner: SSV 1953 Reichswalde\nWettbewerb: Kreisliga A\nPlatztyp: Kunstrasen
+DTSTART:20261129T100000Z
+SUMMARY:A - Nieukerk - SSV 1953 Reichswalde
+UID:21999491-b38c-4114-902c-f60574121a55@2199.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: D-Junioren - TSV Nieukerk\nHeimspiel: Ja\nGegner: JSG GW Vernum /​ RW Geldern\nWettbewerb: Kreisliga B\nPlatztyp: Kunstrasen
+DTSTART:20261203T170000Z
+SUMMARY:H - D1 - JSG GW Vernum /​ RW Geldern
+UID:2aad511a-40a2-4ed9-ba04-8233097fb705@2aad.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nHeimspiel: Ja\nGegner: SSV 1953 Reichswalde\nWettbewerb: Kreisliga A\nSpielort: JSG Aldekerk / Nieukerk\nPlatztyp: Naturrasen
+LOCATION:JSG Aldekerk / Nieukerk
+DTSTART:20261205T131500Z
+SUMMARY:H - C1 - SSV 1953 Reichswalde
+UID:a85081ef-aac8-452c-af6f-ca1548b5244e@a850.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nHeimspiel: Ja\nGegner: BV Sturm Wissel\nWettbewerb: Kreisliga A\nSpielort: JSG Nieukerk / Aldekerk\nPlatztyp: Naturrasen
+LOCATION:JSG Nieukerk / Aldekerk
+DTSTART:20270411T090000Z
+SUMMARY:H - B1 - BV Sturm Wissel
+UID:af936b71-6c48-4b61-b8a4-c1f0d3109ce6@af93.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk\nHeimspiel: Nein\nGegner: JSG Uedem /​ Keppeln /​ Louisendorf\nWettbewerb: Kinderfußball\nSpielort: Tönisstr. 41\, 47589 Uedem\, Rasenplatz\nPlatztyp: Naturrasen
+LOCATION:Tönisstr. 41\, 47589 Uedem\, Rasenplatz
+DTSTART:20261203T160000Z
+SUMMARY:A - E1 - KFV
+UID:90103d72-1a11-4138-98ef-03c40667e9de@9010.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nHeimspiel: Ja\nGegner: JSG Kempen/​Tönisberg C2\nWettbewerb: Kreisfreundschaftsspiele\nSpielort: JSG Aldekerk / Nieukerk II\nPlatztyp: Naturrasen
+LOCATION:JSG Aldekerk / Nieukerk II
+DTSTART:20270206T130000Z
+SUMMARY:H - C2 - JSG Kempen/​Tönisberg C2
+UID:e14482c8-5efc-4db1-b838-bef9c1ed39e7@e144.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nHeimspiel: Ja\nGegner: VfB Alemannia Pfalzdorf\nWettbewerb: Kreisliga A\nSpielort: JSG FC Aldekerk / TSV Nieukerk\nPlatztyp: Naturrasen
+LOCATION:JSG FC Aldekerk / TSV Nieukerk
+DTSTART:20270228T100000Z
+SUMMARY:H - Nieukerk - VfB Alemannia Pfalzdorf
+UID:e7a1b4c7-4283-4bb6-9a47-be137be82d14@e7a1.org
 END:VEVENT
 END:VCALENDAR
